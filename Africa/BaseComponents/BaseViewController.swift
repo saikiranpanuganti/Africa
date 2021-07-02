@@ -8,6 +8,7 @@
 import UIKit
 
 class BaseViewController: UIViewController {
+    var baseViewModel: BaseViewModel = BaseViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,16 +19,16 @@ class BaseViewController: UIViewController {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         
+        checkForTheme()
+    }
+    
+    func checkForTheme() {
         if traitCollection.userInterfaceStyle != .unspecified {
             if traitCollection.userInterfaceStyle != Config.shared.theme {
                 let theme = traitCollection.userInterfaceStyle
                 Config.shared.theme = theme
             }
         }
-    }
-    
-    @objc func notificationReceived(notification: Notification?) {
-        
     }
     
     func push(_ viewController: UIViewController) {

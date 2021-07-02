@@ -23,7 +23,7 @@ protocol BaseViewModelDelegate: AnyObject {
 class BaseViewModel {
     weak var baseDelegate: BaseViewModelDelegate?
     
-    func reloadScreen(notfication: NSNotification?) {
+    func notificationReceived(notfication: NSNotification?) {
         if let userInfo = notfication?.object as? [String: Any], let type = userInfo[NotificationCenterAdapter.typeKey] as? NotificationType {
             switch type {
             case .ThemeChanged:

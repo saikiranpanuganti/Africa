@@ -12,7 +12,6 @@ class SplashView: UIView {
     @IBOutlet weak var imageView: UIImageView!
     
     func setUpUI() {
-        
         self.backgroundColor = Colors.shared.splashBackground
         
         if Config.shared.theme == .dark {
@@ -20,6 +19,9 @@ class SplashView: UIView {
         }else {
             imageView.image = UIImage.init(named: Images.shared.compass)?.withTintColor(UIColor.black, renderingMode: .alwaysOriginal)
         }
-        
+    }
+    
+    func updateUI() {
+        setUpUI()
     }
 }

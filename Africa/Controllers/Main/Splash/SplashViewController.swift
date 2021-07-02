@@ -15,23 +15,19 @@ class SplashViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        viewModel.delegate = self
         checkForTheme()
         splashView.setUpUI()
         viewModel.getData()
-        viewModel.delegate = self
     }
-
-    func checkForTheme() {
-         if traitCollection.userInterfaceStyle == .dark {
-            Config.shared.theme = .dark
-        }else {
-            Config.shared.theme = .light
-        }
+    
+    override func recievedNotification(notification: NSNotification?) {
+        viewModel.notificationReceived(notfication: notification)
     }
 }
 
 extension SplashViewController: SplashViewModelDelegate {
     func updateUI() {
-        //Nothing to update
+        splashView.updateUI()
     }
 }
