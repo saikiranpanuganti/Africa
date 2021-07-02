@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SplashViewController" customModule="Africa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="SplashView" customModule="Africa" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YNb-QF-gnu">
+                                <rect key="frame" x="83" y="324" width="248" height="248"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YNb-QF-gnu" secondAttribute="height" multiplier="1:1" id="5wZ-Xf-9mN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YNb-QF-gnu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1MU-Mr-7eR"/>
+                            <constraint firstItem="YNb-QF-gnu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="FNi-24-yOg"/>
+                            <constraint firstItem="YNb-QF-gnu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wrb-mK-Noj"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="imageView" destination="YNb-QF-gnu" id="u8X-xg-TIC"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="splashView" destination="8bC-Xf-vdC" id="Vw1-Ht-SdF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="69"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

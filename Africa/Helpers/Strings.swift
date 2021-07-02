@@ -1,0 +1,16 @@
+//
+//  Strings.swift
+//  ChromeCastProject
+//
+//  Created by SaiKiran Panuganti on 05/06/21.
+//
+
+import UIKit
+
+class Strings {
+    static let shared: Strings = Strings()
+    
+    private init() { }
+    
+    let appName = "Africa"
+}
