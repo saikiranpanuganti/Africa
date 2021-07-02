@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F39508E268F938200F714DC /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39508D268F938200F714DC /* Animal.swift */; };
+		7F395090268F93A500F714DC /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39508F268F93A500F714DC /* Video.swift */; };
+		7F395092268F93CD00F714DC /* NationalParkLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F395091268F93CD00F714DC /* NationalParkLocation.swift */; };
+		7F395094268F93E500F714DC /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F395093268F93E500F714DC /* CoverImageModel.swift */; };
+		7F395097268F943A00F714DC /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F395096268F943A00F714DC /* Bundle+Extension.swift */; };
 		7F62BF27268EEDA700115596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BF26268EEDA700115596 /* AppDelegate.swift */; };
 		7F62BF29268EEDA700115596 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BF28268EEDA700115596 /* SceneDelegate.swift */; };
 		7F62BF2E268EEDA700115596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F62BF2C268EEDA700115596 /* Main.storyboard */; };
@@ -43,6 +48,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F39508D268F938200F714DC /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		7F39508F268F93A500F714DC /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		7F395091268F93CD00F714DC /* NationalParkLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParkLocation.swift; sourceTree = "<group>"; };
+		7F395093268F93E500F714DC /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
+		7F395096268F943A00F714DC /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		7F62BF23268EEDA700115596 /* Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Africa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F62BF26268EEDA700115596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F62BF28268EEDA700115596 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +101,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F39508C268F937000F714DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F39508D268F938200F714DC /* Animal.swift */,
+				7F39508F268F93A500F714DC /* Video.swift */,
+				7F395091268F93CD00F714DC /* NationalParkLocation.swift */,
+				7F395093268F93E500F714DC /* CoverImageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F395095268F942500F714DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7F62BF77268F1B5A00115596 /* View+Extension.swift */,
+				7F395096268F943A00F714DC /* Bundle+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7F62BF1A268EEDA700115596 = {
 			isa = PBXGroup;
 			children = (
@@ -114,8 +144,10 @@
 				7F62BF28268EEDA700115596 /* SceneDelegate.swift */,
 				7F62BF86268F375F00115596 /* NotificationCenterAdaptor */,
 				7F62BF64268F1B0200115596 /* Helpers */,
+				7F39508C268F937000F714DC /* Models */,
 				7F62BF5A268F19DB00115596 /* BaseComponents */,
 				7F62BF7B268F1E1F00115596 /* Controllers */,
+				7F395095268F942500F714DC /* Extensions */,
 				7F62BF3A268EF57600115596 /* DataFiles */,
 				7F62BF43268EF5A500115596 /* Videos */,
 				7F62BF2F268EEDA900115596 /* Assets.xcassets */,
@@ -172,7 +204,6 @@
 				7F62BF69268F1B2F00115596 /* Fonts.swift */,
 				7F62BF71268F1B3B00115596 /* Images.swift */,
 				7F62BF72268F1B3B00115596 /* Strings.swift */,
-				7F62BF77268F1B5A00115596 /* View+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -297,6 +328,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F62BF88268F377000115596 /* NotificationCenterAdapter.swift in Sources */,
+				7F395097268F943A00F714DC /* Bundle+Extension.swift in Sources */,
+				7F39508E268F938200F714DC /* Animal.swift in Sources */,
 				7F62BF7F268F1F0F00115596 /* SplashViewModel.swift in Sources */,
 				7F62BF6C268F1B2F00115596 /* Constants.swift in Sources */,
 				7F62BF66268F1B1F00115596 /* Colors.swift in Sources */,
@@ -308,7 +341,10 @@
 				7F62BF6B268F1B2F00115596 /* CustomError.swift in Sources */,
 				7F62BF62268F1AD600115596 /* BaseViewModel.swift in Sources */,
 				7F62BF76268F1B3B00115596 /* Strings.swift in Sources */,
+				7F395090268F93A500F714DC /* Video.swift in Sources */,
 				7F62BF75268F1B3B00115596 /* Images.swift in Sources */,
+				7F395094268F93E500F714DC /* CoverImageModel.swift in Sources */,
+				7F395092268F93CD00F714DC /* NationalParkLocation.swift in Sources */,
 				7F62BF29268EEDA700115596 /* SceneDelegate.swift in Sources */,
 				7F62BF81268F207700115596 /* SplashView.swift in Sources */,
 				7F62BF78268F1B5A00115596 /* View+Extension.swift in Sources */,
