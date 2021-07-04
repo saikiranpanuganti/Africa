@@ -19,7 +19,7 @@ class NavBarView: UIView {
     var rightButtonImage: String = "" {
         didSet {
             secondButtonImage.isHidden = false
-            secondButtonImage.image = UIImage(named: leftButtonImage)
+            secondButtonImage.image = UIImage(named: rightButtonImage)
         }
     }
     

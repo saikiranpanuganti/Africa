@@ -18,4 +18,7 @@ class Strings {
     let watch = "Watch"
     let locations = "Locations"
     let gallery = "Gallery"
+    let copyrights = "Copyright © SaiKiran Panuganti"
+    let rightsReserved = "All right reserved"
+    let betterApps = "Better Apps ♡ Less Code"
 }

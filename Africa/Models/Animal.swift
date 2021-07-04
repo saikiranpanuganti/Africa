@@ -17,3 +17,12 @@ struct Animal: Codable {
   let gallery: [String]
   let fact: [String]
 }
+
+extension Animal: AnimalDetailsCollectionViewCellDataSource {
+    var title: String {
+        return name
+    }
+    var subTitle: String {
+        return headline
+    }
+}

@@ -47,6 +47,12 @@
 		7F62BF7F268F1F0F00115596 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BF7E268F1F0F00115596 /* SplashViewModel.swift */; };
 		7F62BF81268F207700115596 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BF80268F207700115596 /* SplashView.swift */; };
 		7F62BF88268F377000115596 /* NotificationCenterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BF87268F377000115596 /* NotificationCenterAdapter.swift */; };
+		7F7759702691C3D70012BC25 /* HomeTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F77596F2691C3D70012BC25 /* HomeTabViewModel.swift */; };
+		7F7759722691C3E10012BC25 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7759712691C3E10012BC25 /* HomeTabView.swift */; };
+		7F7759972691E7560012BC25 /* AnimalDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7759952691E7560012BC25 /* AnimalDetailsCollectionViewCell.swift */; };
+		7F7759982691E7560012BC25 /* AnimalDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7759962691E7560012BC25 /* AnimalDetailsCollectionViewCell.xib */; };
+		7F77599E269201D40012BC25 /* CopyrightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F77599C269201D40012BC25 /* CopyrightCollectionViewCell.swift */; };
+		7F77599F269201D40012BC25 /* CopyrightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F77599D269201D40012BC25 /* CopyrightCollectionViewCell.xib */; };
 		7F78BE7C269021CB000DD505 /* HomeTabNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE7B269021CB000DD505 /* HomeTabNavigationController.swift */; };
 		7F78BE7E2690240C000DD505 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE7D2690240C000DD505 /* Storyboard.swift */; };
 		7F78BE81269024AE000DD505 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE80269024AE000DD505 /* HomeTabViewController.swift */; };
@@ -96,6 +102,12 @@
 		7F62BF7E268F1F0F00115596 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		7F62BF80268F207700115596 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		7F62BF87268F377000115596 /* NotificationCenterAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterAdapter.swift; sourceTree = "<group>"; };
+		7F77596F2691C3D70012BC25 /* HomeTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewModel.swift; sourceTree = "<group>"; };
+		7F7759712691C3E10012BC25 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		7F7759952691E7560012BC25 /* AnimalDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F7759962691E7560012BC25 /* AnimalDetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalDetailsCollectionViewCell.xib; sourceTree = "<group>"; };
+		7F77599C269201D40012BC25 /* CopyrightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F77599D269201D40012BC25 /* CopyrightCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CopyrightCollectionViewCell.xib; sourceTree = "<group>"; };
 		7F78BE7B269021CB000DD505 /* HomeTabNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabNavigationController.swift; sourceTree = "<group>"; };
 		7F78BE7D2690240C000DD505 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		7F78BE80269024AE000DD505 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
@@ -285,10 +297,40 @@
 			path = NotificationCenterAdaptor;
 			sourceTree = "<group>";
 		};
+		7F7759992691E75B0012BC25 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7F77599B269201B20012BC25 /* Copyright */,
+				7F77599A269201A40012BC25 /* AnimalsDetails */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7F77599A269201A40012BC25 /* AnimalsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7F7759952691E7560012BC25 /* AnimalDetailsCollectionViewCell.swift */,
+				7F7759962691E7560012BC25 /* AnimalDetailsCollectionViewCell.xib */,
+			);
+			path = AnimalsDetails;
+			sourceTree = "<group>";
+		};
+		7F77599B269201B20012BC25 /* Copyright */ = {
+			isa = PBXGroup;
+			children = (
+				7F77599C269201D40012BC25 /* CopyrightCollectionViewCell.swift */,
+				7F77599D269201D40012BC25 /* CopyrightCollectionViewCell.xib */,
+			);
+			path = Copyright;
+			sourceTree = "<group>";
+		};
 		7F78BE7F2690249B000DD505 /* HomeTab */ = {
 			isa = PBXGroup;
 			children = (
 				7F78BE80269024AE000DD505 /* HomeTabViewController.swift */,
+				7F77596F2691C3D70012BC25 /* HomeTabViewModel.swift */,
+				7F7759712691C3E10012BC25 /* HomeTabView.swift */,
+				7F7759992691E75B0012BC25 /* Cells */,
 			);
 			path = HomeTab;
 			sourceTree = "<group>";
@@ -350,9 +392,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F77599F269201D40012BC25 /* CopyrightCollectionViewCell.xib in Resources */,
 				7F62BF40268EF58700115596 /* covers.json in Resources */,
 				7F62BF57268EF5D000115596 /* gorilla.mp4 in Resources */,
 				7F62BF52268EF5D000115596 /* lion.mp4 in Resources */,
+				7F7759982691E7560012BC25 /* AnimalDetailsCollectionViewCell.xib in Resources */,
 				7F62BF51268EF5D000115596 /* lioness.mp4 in Resources */,
 				7F62BF33268EEDA900115596 /* LaunchScreen.storyboard in Resources */,
 				7F62BF54268EF5D000115596 /* elephant.mp4 in Resources */,
@@ -378,7 +422,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7759972691E7560012BC25 /* AnimalDetailsCollectionViewCell.swift in Sources */,
 				7F62BF88268F377000115596 /* NotificationCenterAdapter.swift in Sources */,
+				7F7759722691C3E10012BC25 /* HomeTabView.swift in Sources */,
 				7F78BE8C269054AC000DD505 /* TabBarController.swift in Sources */,
 				7F395097268F943A00F714DC /* Bundle+Extension.swift in Sources */,
 				7F39509E268F9A5600F714DC /* NavBarView.swift in Sources */,
@@ -388,11 +434,13 @@
 				7F62BF7F268F1F0F00115596 /* SplashViewModel.swift in Sources */,
 				7F62BF6C268F1B2F00115596 /* Constants.swift in Sources */,
 				7F62BF66268F1B1F00115596 /* Colors.swift in Sources */,
+				7F7759702691C3D70012BC25 /* HomeTabViewModel.swift in Sources */,
 				7F62BF7A268F1D1400115596 /* SplashViewController.swift in Sources */,
 				7F62BF6D268F1B2F00115596 /* Fonts.swift in Sources */,
 				7F62BF59268F18E600115596 /* BaseViewController.swift in Sources */,
 				7F62BF6E268F1B2F00115596 /* Config.swift in Sources */,
 				7F62BF27268EEDA700115596 /* AppDelegate.swift in Sources */,
+				7F77599E269201D40012BC25 /* CopyrightCollectionViewCell.swift in Sources */,
 				7F62BF6B268F1B2F00115596 /* CustomError.swift in Sources */,
 				7F62BF62268F1AD600115596 /* BaseViewModel.swift in Sources */,
 				7F62BF76268F1B3B00115596 /* Strings.swift in Sources */,

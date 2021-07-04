@@ -7,18 +7,24 @@
 
 import UIKit
 
-class HomeTabViewController: UIViewController {
-
-    var navBarView: NavBarView!
+class HomeTabViewController: BaseViewController {
+    
+    @IBOutlet weak var homeTabView: HomeTabView!
+    var viewModel: HomeTabViewModel = HomeTabViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.blue
-        navBarView = NavBarView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: topSafeAreaHeight + 44))
-        navBarView.leftButtonImage = Images.shared.logo
-//        navBarView.rightButtonImage = Images.shared.back_orange
-        self.view.addSubview(navBarView)
+        viewModel.delegate = self
+        homeTabView.setUpUI()
+        viewModel.getData()
     }
 
+}
+
+extension HomeTabViewController: HomeTabViewModelDelegate {
+    func updateUI() {
+        homeTabView.dataSource = viewModel
+        homeTabView.updateUI()
+    }
 }
