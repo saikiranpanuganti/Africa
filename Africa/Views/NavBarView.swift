@@ -116,7 +116,7 @@ class NavBarView: UIView {
     }
     
     func setUpUI() {
-        self.backgroundColor = Colors.shared.blackTextColor
+        self.backgroundColor = Colors.shared.tabBarBackrgound
         addSubViews()
         setUpConstraints()
     }

@@ -31,7 +31,7 @@ class TabBarController: UITabBarController {
         UITabBar.appearance().backgroundImage = UIImage()
         UITabBar.appearance().shadowImage = UIImage()
         UITabBar.appearance().clipsToBounds = true
-        UITabBar.appearance().backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.4)
+        UITabBar.appearance().backgroundColor = Colors.shared.tabBarBackrgound
         UITabBar.appearance().tintColor = Colors.shared.orangeAppColor
     }
     
