@@ -21,6 +21,16 @@ class SplashViewController: BaseViewController {
         viewModel.getData()
     }
     
+    override func viewSafeAreaInsetsDidChange() {
+        super.viewSafeAreaInsetsDidChange()
+        
+        let top = view.safeAreaInsets.top
+        topSafeAreaHeight = top
+        
+        let bottom = view.safeAreaInsets.bottom
+        bottomSafeAreaHeight = bottom
+    }
+    
     override func recievedNotification(notification: NSNotification?) {
         viewModel.notificationReceived(notfication: notification)
     }
