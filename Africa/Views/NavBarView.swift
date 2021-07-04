@@ -8,7 +8,21 @@
 import UIKit
 
 class NavBarView: UIView {
-    var tvLeftAnchor = NSLayoutConstraint()
+    
+    var leftButtonImage: String = "" {
+        didSet {
+            firstButtonImage.isHidden = false
+            firstButtonImage.image = UIImage(named: leftButtonImage)
+        }
+    }
+    
+    var rightButtonImage: String = "" {
+        didSet {
+            secondButtonImage.isHidden = false
+            secondButtonImage.image = UIImage(named: leftButtonImage)
+        }
+    }
+    
     
     lazy var backView : UIView = {
         let view = UIView()
@@ -47,6 +61,40 @@ class NavBarView: UIView {
         return button
     }()
     
+    lazy var buttonsStack : UIStackView = {
+        let stackView = UIStackView()
+//        stackView.backgroundColor = UIColor.green
+        stackView.axis = .horizontal
+        stackView.distribution = .equalSpacing
+        stackView.spacing = 20
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        return stackView
+    }()
+    
+    lazy var firstButtonImage : UIImageView = {
+        let backImage = UIImageView()
+//        backImage.backgroundColor = UIColor.blue
+        backImage.isUserInteractionEnabled = true
+        backImage.widthAnchor.constraint(equalToConstant: 25).isActive = true
+        backImage.translatesAutoresizingMaskIntoConstraints = false
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(leftButtonTapped(tapGestureRecognizer:)))
+        backImage.addGestureRecognizer(tapGestureRecognizer)
+        
+        return backImage
+    }()
+    
+    lazy var secondButtonImage : UIImageView = {
+        let backImage = UIImageView()
+//        backImage.backgroundColor = UIColor.blue
+        backImage.isUserInteractionEnabled = true
+        backImage.widthAnchor.constraint(equalToConstant: 25).isActive = true
+        backImage.translatesAutoresizingMaskIntoConstraints = false
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(rightButtonTapped(tapGestureRecognizer:)))
+        backImage.addGestureRecognizer(tapGestureRecognizer)
+        
+        return backImage
+    }()
     
     
     override init(frame: CGRect) {
@@ -78,6 +126,13 @@ class NavBarView: UIView {
         backView.addSubview(backImageView)
         backView.addSubview(backLabel)
         backView.addSubview(backButton)
+        
+        buttonsStack.addArrangedSubview(firstButtonImage)
+        buttonsStack.addArrangedSubview(secondButtonImage)
+        self.addSubview(buttonsStack)
+        
+        firstButtonImage.isHidden = true
+        secondButtonImage.isHidden = true
     }
     
     func setUpConstraints() {
@@ -98,9 +153,21 @@ class NavBarView: UIView {
         backButton.rightAnchor.constraint(equalTo: backView.rightAnchor, constant: 0).isActive = true
         backButton.centerYAnchor.constraint(equalTo: backView.centerYAnchor, constant: 0).isActive = true
         backButton.heightAnchor.constraint(equalTo: backView.heightAnchor, multiplier: 1.25).isActive = true
+        
+        buttonsStack.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -15).isActive = true
+        buttonsStack.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: topSafeAreaHeight/2).isActive = true
+        buttonsStack.heightAnchor.constraint(equalToConstant: 25).isActive = true
     }
     
     @objc func backButtonTapped(_ sender: UIButton) {
         print("backButtonTapped")
+    }
+    
+    @objc func leftButtonTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        print("leftButtonTapped")
+    }
+    
+    @objc func rightButtonTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        print("rightButtonTapped")
     }
 }
