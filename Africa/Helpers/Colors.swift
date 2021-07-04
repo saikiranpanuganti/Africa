@@ -14,6 +14,7 @@ class Colors {
     private init() { }
     
     var splashBackground = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //rgba(255, 255, 255, 1)
+    var orangeAppColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1) //rgba(255, 175, 0, 1)
     var menuTopGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.7) //rgba(0, 0, 0, 0.7)
     var menuBottomGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.3) //rgba(0, 0, 0, 0.3)
     var clear = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0) //rgba(0, 0, 0, 0)
@@ -32,6 +33,7 @@ class Colors {
         switch theme {
         case .dark:
             splashBackground = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) //rgba(0, 0, 0, 1)
+            orangeAppColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1) //rgba(255, 175, 0, 1)
             menuTopGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.7) //rgba(0, 0, 0, 0.7)
             menuBottomGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.3) //rgba(0, 0, 0, 0.3)
             clear = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0) //rgba(0, 0, 0, 0)
@@ -47,6 +49,7 @@ class Colors {
             lightBlueColor = #colorLiteral(red: 0.3098039216, green: 0.6196078431, blue: 0.9490196078, alpha: 1) //rgba(79, 158, 242, 1)
         default:
             splashBackground = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //rgba(255, 255, 255, 1)
+            orangeAppColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1) //rgba(255, 175, 0, 1)
             menuTopGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.7) //rgba(0, 0, 0, 0.7)
             menuBottomGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.3) //rgba(0, 0, 0, 0.3)
             clear = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0) //rgba(0, 0, 0, 0)

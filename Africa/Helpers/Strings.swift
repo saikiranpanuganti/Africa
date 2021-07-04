@@ -13,4 +13,9 @@ class Strings {
     private init() { }
     
     let appName = "Africa"
+    let back = "Back"
+    let browse = "Browse"
+    let watch = "Watch"
+    let locations = "Locations"
+    let gallery = "Gallery"
 }

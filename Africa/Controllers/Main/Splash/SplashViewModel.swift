@@ -5,7 +5,7 @@
 //  Created by SaiKiran Panuganti on 02/07/21.
 //
 
-import Foundation
+import UIKit
 
 protocol SplashViewModelDelegate: BaseViewModelDelegate {
     
@@ -20,8 +20,14 @@ class SplashViewModel : BaseViewModel {
     }
     
     func getData() {
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.delegate?.navigationController?.viewControllers = [Controller.tabBar.getViewController()]
+            strongSelf.delegate?.popToRoot()
+        }
     }
+    
+    
     
     override func notificationReceived(notfication: NSNotification?) {
         super.notificationReceived(notfication: notfication)

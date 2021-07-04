@@ -12,6 +12,8 @@
 		7F395092268F93CD00F714DC /* NationalParkLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F395091268F93CD00F714DC /* NationalParkLocation.swift */; };
 		7F395094268F93E500F714DC /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F395093268F93E500F714DC /* CoverImageModel.swift */; };
 		7F395097268F943A00F714DC /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F395096268F943A00F714DC /* Bundle+Extension.swift */; };
+		7F39509A268F99DE00F714DC /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F395099268F99DE00F714DC /* TabBar.storyboard */; };
+		7F39509E268F9A5600F714DC /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39509D268F9A5600F714DC /* NavBarView.swift */; };
 		7F62BF27268EEDA700115596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BF26268EEDA700115596 /* AppDelegate.swift */; };
 		7F62BF29268EEDA700115596 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BF28268EEDA700115596 /* SceneDelegate.swift */; };
 		7F62BF2E268EEDA700115596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F62BF2C268EEDA700115596 /* Main.storyboard */; };
@@ -45,6 +47,10 @@
 		7F62BF7F268F1F0F00115596 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BF7E268F1F0F00115596 /* SplashViewModel.swift */; };
 		7F62BF81268F207700115596 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BF80268F207700115596 /* SplashView.swift */; };
 		7F62BF88268F377000115596 /* NotificationCenterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BF87268F377000115596 /* NotificationCenterAdapter.swift */; };
+		7F78BE7C269021CB000DD505 /* HomeTabNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE7B269021CB000DD505 /* HomeTabNavigationController.swift */; };
+		7F78BE7E2690240C000DD505 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE7D2690240C000DD505 /* Storyboard.swift */; };
+		7F78BE81269024AE000DD505 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE80269024AE000DD505 /* HomeTabViewController.swift */; };
+		7F78BE8C269054AC000DD505 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE8B269054AC000DD505 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +59,8 @@
 		7F395091268F93CD00F714DC /* NationalParkLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParkLocation.swift; sourceTree = "<group>"; };
 		7F395093268F93E500F714DC /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		7F395096268F943A00F714DC /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		7F395099268F99DE00F714DC /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		7F39509D268F9A5600F714DC /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		7F62BF23268EEDA700115596 /* Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Africa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F62BF26268EEDA700115596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F62BF28268EEDA700115596 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +96,10 @@
 		7F62BF7E268F1F0F00115596 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		7F62BF80268F207700115596 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		7F62BF87268F377000115596 /* NotificationCenterAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterAdapter.swift; sourceTree = "<group>"; };
+		7F78BE7B269021CB000DD505 /* HomeTabNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabNavigationController.swift; sourceTree = "<group>"; };
+		7F78BE7D2690240C000DD505 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		7F78BE80269024AE000DD505 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		7F78BE8B269054AC000DD505 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,33 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		7F395098268F99A300F714DC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7F395099268F99DE00F714DC /* TabBar.storyboard */,
+				7F78BE8B269054AC000DD505 /* TabBarController.swift */,
+				7F39509B268F99E300F714DC /* TabBarScreens */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		7F39509B268F99E300F714DC /* TabBarScreens */ = {
+			isa = PBXGroup;
+			children = (
+				7F78BE7B269021CB000DD505 /* HomeTabNavigationController.swift */,
+				7F78BE7F2690249B000DD505 /* HomeTab */,
+			);
+			path = TabBarScreens;
+			sourceTree = "<group>";
+		};
+		7F39509C268F9A3D00F714DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F39509D268F9A5600F714DC /* NavBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7F62BF1A268EEDA700115596 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +186,7 @@
 				7F39508C268F937000F714DC /* Models */,
 				7F62BF5A268F19DB00115596 /* BaseComponents */,
 				7F62BF7B268F1E1F00115596 /* Controllers */,
+				7F39509C268F9A3D00F714DC /* Views */,
 				7F395095268F942500F714DC /* Extensions */,
 				7F62BF3A268EF57600115596 /* DataFiles */,
 				7F62BF43268EF5A500115596 /* Videos */,
@@ -211,7 +251,9 @@
 		7F62BF7B268F1E1F00115596 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7F78BE7D2690240C000DD505 /* Storyboard.swift */,
 				7F62BF7C268F1ED900115596 /* Main */,
+				7F395098268F99A300F714DC /* TabBar */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -241,6 +283,14 @@
 				7F62BF87268F377000115596 /* NotificationCenterAdapter.swift */,
 			);
 			path = NotificationCenterAdaptor;
+			sourceTree = "<group>";
+		};
+		7F78BE7F2690249B000DD505 /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				7F78BE80269024AE000DD505 /* HomeTabViewController.swift */,
+			);
+			path = HomeTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +360,7 @@
 				7F62BF42268EF58700115596 /* videos.json in Resources */,
 				7F62BF41268EF58700115596 /* animals.json in Resources */,
 				7F62BF53268EF5D000115596 /* rhino.mp4 in Resources */,
+				7F39509A268F99DE00F714DC /* TabBar.storyboard in Resources */,
 				7F62BF3F268EF58700115596 /* locations.json in Resources */,
 				7F62BF55268EF5D000115596 /* hippo.mp4 in Resources */,
 				7F62BF50268EF5D000115596 /* cheetah.mp4 in Resources */,
@@ -328,8 +379,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F62BF88268F377000115596 /* NotificationCenterAdapter.swift in Sources */,
+				7F78BE8C269054AC000DD505 /* TabBarController.swift in Sources */,
 				7F395097268F943A00F714DC /* Bundle+Extension.swift in Sources */,
+				7F39509E268F9A5600F714DC /* NavBarView.swift in Sources */,
 				7F39508E268F938200F714DC /* Animal.swift in Sources */,
+				7F78BE81269024AE000DD505 /* HomeTabViewController.swift in Sources */,
+				7F78BE7E2690240C000DD505 /* Storyboard.swift in Sources */,
 				7F62BF7F268F1F0F00115596 /* SplashViewModel.swift in Sources */,
 				7F62BF6C268F1B2F00115596 /* Constants.swift in Sources */,
 				7F62BF66268F1B1F00115596 /* Colors.swift in Sources */,
@@ -345,6 +400,7 @@
 				7F62BF75268F1B3B00115596 /* Images.swift in Sources */,
 				7F395094268F93E500F714DC /* CoverImageModel.swift in Sources */,
 				7F395092268F93CD00F714DC /* NationalParkLocation.swift in Sources */,
+				7F78BE7C269021CB000DD505 /* HomeTabNavigationController.swift in Sources */,
 				7F62BF29268EEDA700115596 /* SceneDelegate.swift in Sources */,
 				7F62BF81268F207700115596 /* SplashView.swift in Sources */,
 				7F62BF78268F1B5A00115596 /* View+Extension.swift in Sources */,
