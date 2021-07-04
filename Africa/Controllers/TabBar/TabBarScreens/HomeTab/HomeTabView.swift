@@ -9,6 +9,7 @@ import UIKit
 
 protocol HomeTabViewDataSource: AnyObject {
     var animals: [Animal] {get}
+    var banner: Banner? {get}
 }
 
 class HomeTabView: UIView {
@@ -34,6 +35,7 @@ class HomeTabView: UIView {
     func registerCells() {
         collectionView.register(UINib(nibName: "AnimalDetailsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "AnimalDetailsCollectionViewCell")
         collectionView.register(UINib(nibName: "CopyrightCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CopyrightCollectionViewCell")
+        collectionView.register(UINib(nibName: "BannerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "BannerCollectionViewCell")
     }
     
     func updateUI() {
@@ -43,16 +45,24 @@ class HomeTabView: UIView {
 
 extension HomeTabView : UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 3
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if section == 0 {
+            
+        }else if section == 1 {
             return dataSource?.animals.count ?? 0
         }
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.section == 0 {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BannerCollectionViewCell", for: indexPath) as? BannerCollectionViewCell {
+                cell.delegate = self
+                cell.dataSource = dataSource?.banner
+                return cell
+            }
+        }else if indexPath.section == 1 {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AnimalDetailsCollectionViewCell", for: indexPath) as? AnimalDetailsCollectionViewCell {
                 cell.delegate = self
                 cell.dataSource = dataSource?.animals[indexPath.row]
@@ -71,6 +81,8 @@ extension HomeTabView : UICollectionViewDelegate {
 extension HomeTabView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0{
+            return CGSize(width: ScreenWidth, height: ScreenWidth*0.8 + 45)
+        }else if indexPath.section == 1 {
             return CGSize(width: ScreenWidth, height: 106)
         }
         return CGSize(width: ScreenWidth, height: 228)
@@ -84,5 +96,9 @@ extension HomeTabView: UICollectionViewDelegateFlowLayout {
 }
 
 extension HomeTabView: AnimalDetailsCollectionViewCellDelegate {
+    
+}
+
+extension HomeTabView: BannerCollectionViewCellDelegate {
     
 }

@@ -53,6 +53,10 @@
 		7F7759982691E7560012BC25 /* AnimalDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7759962691E7560012BC25 /* AnimalDetailsCollectionViewCell.xib */; };
 		7F77599E269201D40012BC25 /* CopyrightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F77599C269201D40012BC25 /* CopyrightCollectionViewCell.swift */; };
 		7F77599F269201D40012BC25 /* CopyrightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F77599D269201D40012BC25 /* CopyrightCollectionViewCell.xib */; };
+		7F7759A326920DEF0012BC25 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7759A126920DEF0012BC25 /* BannerCollectionViewCell.swift */; };
+		7F7759A426920DEF0012BC25 /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7759A226920DEF0012BC25 /* BannerCollectionViewCell.xib */; };
+		7F7759A92692128A0012BC25 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7759A72692128A0012BC25 /* ImageCollectionViewCell.swift */; };
+		7F7759AA2692128A0012BC25 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7759A82692128A0012BC25 /* ImageCollectionViewCell.xib */; };
 		7F78BE7C269021CB000DD505 /* HomeTabNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE7B269021CB000DD505 /* HomeTabNavigationController.swift */; };
 		7F78BE7E2690240C000DD505 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE7D2690240C000DD505 /* Storyboard.swift */; };
 		7F78BE81269024AE000DD505 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE80269024AE000DD505 /* HomeTabViewController.swift */; };
@@ -108,6 +112,10 @@
 		7F7759962691E7560012BC25 /* AnimalDetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalDetailsCollectionViewCell.xib; sourceTree = "<group>"; };
 		7F77599C269201D40012BC25 /* CopyrightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightCollectionViewCell.swift; sourceTree = "<group>"; };
 		7F77599D269201D40012BC25 /* CopyrightCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CopyrightCollectionViewCell.xib; sourceTree = "<group>"; };
+		7F7759A126920DEF0012BC25 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F7759A226920DEF0012BC25 /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
+		7F7759A72692128A0012BC25 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F7759A82692128A0012BC25 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		7F78BE7B269021CB000DD505 /* HomeTabNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabNavigationController.swift; sourceTree = "<group>"; };
 		7F78BE7D2690240C000DD505 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		7F78BE80269024AE000DD505 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
@@ -300,6 +308,8 @@
 		7F7759992691E75B0012BC25 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				7F7759A5269212680012BC25 /* Image */,
+				7F7759A026920DD90012BC25 /* Banner */,
 				7F77599B269201B20012BC25 /* Copyright */,
 				7F77599A269201A40012BC25 /* AnimalsDetails */,
 			);
@@ -322,6 +332,24 @@
 				7F77599D269201D40012BC25 /* CopyrightCollectionViewCell.xib */,
 			);
 			path = Copyright;
+			sourceTree = "<group>";
+		};
+		7F7759A026920DD90012BC25 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				7F7759A126920DEF0012BC25 /* BannerCollectionViewCell.swift */,
+				7F7759A226920DEF0012BC25 /* BannerCollectionViewCell.xib */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		7F7759A5269212680012BC25 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				7F7759A72692128A0012BC25 /* ImageCollectionViewCell.swift */,
+				7F7759A82692128A0012BC25 /* ImageCollectionViewCell.xib */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		7F78BE7F2690249B000DD505 /* HomeTab */ = {
@@ -394,6 +422,7 @@
 			files = (
 				7F77599F269201D40012BC25 /* CopyrightCollectionViewCell.xib in Resources */,
 				7F62BF40268EF58700115596 /* covers.json in Resources */,
+				7F7759AA2692128A0012BC25 /* ImageCollectionViewCell.xib in Resources */,
 				7F62BF57268EF5D000115596 /* gorilla.mp4 in Resources */,
 				7F62BF52268EF5D000115596 /* lion.mp4 in Resources */,
 				7F7759982691E7560012BC25 /* AnimalDetailsCollectionViewCell.xib in Resources */,
@@ -411,6 +440,7 @@
 				7F62BF4E268EF5D000115596 /* ostrich.mp4 in Resources */,
 				7F62BF4F268EF5D000115596 /* zebra.mp4 in Resources */,
 				7F62BF56268EF5D000115596 /* giraffe.mp4 in Resources */,
+				7F7759A426920DEF0012BC25 /* BannerCollectionViewCell.xib in Resources */,
 				7F62BF2E268EEDA700115596 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +454,7 @@
 			files = (
 				7F7759972691E7560012BC25 /* AnimalDetailsCollectionViewCell.swift in Sources */,
 				7F62BF88268F377000115596 /* NotificationCenterAdapter.swift in Sources */,
+				7F7759A92692128A0012BC25 /* ImageCollectionViewCell.swift in Sources */,
 				7F7759722691C3E10012BC25 /* HomeTabView.swift in Sources */,
 				7F78BE8C269054AC000DD505 /* TabBarController.swift in Sources */,
 				7F395097268F943A00F714DC /* Bundle+Extension.swift in Sources */,
@@ -440,6 +471,7 @@
 				7F62BF59268F18E600115596 /* BaseViewController.swift in Sources */,
 				7F62BF6E268F1B2F00115596 /* Config.swift in Sources */,
 				7F62BF27268EEDA700115596 /* AppDelegate.swift in Sources */,
+				7F7759A326920DEF0012BC25 /* BannerCollectionViewCell.swift in Sources */,
 				7F77599E269201D40012BC25 /* CopyrightCollectionViewCell.swift in Sources */,
 				7F62BF6B268F1B2F00115596 /* CustomError.swift in Sources */,
 				7F62BF62268F1AD600115596 /* BaseViewModel.swift in Sources */,

@@ -15,9 +15,12 @@ class HomeTabViewModel: BaseViewModel {
     weak var delegate: HomeTabViewModelDelegate?
     
     var animals: [Animal] = []
+    var banner: Banner?
     
     func getData() {
         animals = Bundle.main.decode("animals.json")
+        let coverImages: [CoverImage] = Bundle.main.decode("covers.json")
+        banner = Banner(banners: coverImages)
         delegate?.updateUI()
     }
 }

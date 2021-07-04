@@ -12,6 +12,13 @@ class Fonts {
     
     private init() {  }
     
+    let heavy5 = UIFont.init(name: "Changa-Heavy", size: 20) ?? UIFont.systemFont(ofSize: 20, weight: .heavy)
+    let heavy6 = UIFont.init(name: "Changa-Heavy", size: 22) ?? UIFont.systemFont(ofSize: 22, weight: .heavy)
+    let heavy7 = UIFont.init(name: "Changa-Heavy", size: 24) ?? UIFont.systemFont(ofSize: 24, weight: .heavy)
+    let heavy8 = UIFont.init(name: "Changa-Heavy", size: 26) ?? UIFont.systemFont(ofSize: 26, weight: .heavy)
+    let heavy9 = UIFont.init(name: "Changa-Heavy", size: 28) ?? UIFont.systemFont(ofSize: 28, weight: .heavy)
+    let heavy10 = UIFont.init(name: "Changa-Heavy", size: 30) ?? UIFont.systemFont(ofSize: 30, weight: .heavy)
+    
     let boldMin = UIFont.init(name: "Changa-Bold", size: 10) ?? UIFont.systemFont(ofSize: 10, weight: .bold)
     let bold1 = UIFont.init(name: "Changa-Bold", size: 12) ?? UIFont.systemFont(ofSize: 12, weight: .bold)
     let bold2 = UIFont.init(name: "Changa-Bold", size: 14) ?? UIFont.systemFont(ofSize: 14, weight: .bold)
@@ -20,6 +27,8 @@ class Fonts {
     let bold5 = UIFont.init(name: "Changa-Bold", size: 20) ?? UIFont.systemFont(ofSize: 20, weight: .bold)
     let bold6 = UIFont.init(name: "Changa-Bold", size: 22) ?? UIFont.systemFont(ofSize: 22, weight: .bold)
     let bold7 = UIFont.init(name: "Changa-Bold", size: 24) ?? UIFont.systemFont(ofSize: 24, weight: .bold)
+    let bold8 = UIFont.init(name: "Changa-Bold", size: 26) ?? UIFont.systemFont(ofSize: 26, weight: .bold)
+    let bold9 = UIFont.init(name: "Changa-Bold", size: 28) ?? UIFont.systemFont(ofSize: 28, weight: .bold)
     
     let semiboldMin = UIFont.init(name: "Changa-Semibold", size: 10) ?? UIFont.systemFont(ofSize: 10, weight: .semibold)
     let semibold1 = UIFont.init(name: "Changa-Semibold", size: 12) ?? UIFont.systemFont(ofSize: 12, weight: .semibold)
