@@ -71,7 +71,7 @@ extension BannerCollectionViewCell: UICollectionViewDelegate{
 
 extension BannerCollectionViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: ScreenWidth, height: ScreenWidth*0.75)
+        return CGSize(width: ScreenWidth-20, height: (ScreenWidth-20)*0.75)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0

@@ -22,7 +22,7 @@ class HomeTabViewModel: BaseViewModel {
     var gridAnimals: [Animal] = []
     var banner: Banner?
     var gridView: Bool = false
-    var gridType: GridType = .largeGrid
+    var gridType: GridType = .smallGrid
     
     func getData() {
         animals = Bundle.main.decode("animals.json")
@@ -47,15 +47,19 @@ class HomeTabViewModel: BaseViewModel {
         delegate?.updateUI()
     }
     func rightButtonTapped() {
-        gridView = true
-        let currentGrid = gridType.rawValue
-        if (currentGrid + 1) <= 3 {
-            gridType = GridType.init(rawValue: currentGrid+1) ?? .list
+        if gridView == false {
+            gridView = true
+            delegate?.updateUI()
         }else {
-            gridType = .list
+            let currentGrid = gridType.rawValue
+            if (currentGrid + 1) <= 3 {
+                gridType = GridType.init(rawValue: currentGrid+1) ?? .list
+            }else {
+                gridType = .list
+            }
+            
+            delegate?.updateUI()
         }
-        
-        delegate?.updateUI()
     }
 }
 

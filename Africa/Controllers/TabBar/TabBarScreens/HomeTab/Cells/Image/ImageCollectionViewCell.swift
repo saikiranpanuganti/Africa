@@ -41,7 +41,6 @@ class ImageCollectionViewCell: UICollectionViewCell {
     
     func configureUI() {
         imageView.image = UIImage(named: dataSource?.image ?? "")
-        print("cornerRadius", CGFloat(dataSource?.cornerRadius ?? 0))
         imageView.layer.cornerRadius = dataSource?.cornerRadius ?? 0
     }
     
