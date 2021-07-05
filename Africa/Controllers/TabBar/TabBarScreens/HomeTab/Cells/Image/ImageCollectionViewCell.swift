@@ -9,6 +9,14 @@ import UIKit
 
 protocol ImageCollectionViewCellDataSource {
     var image: String {get}
+    var cornerRadius: CGFloat? {get}
+}
+extension ImageCollectionViewCellDataSource {
+    var cornerRadius: CGFloat? {
+        get {
+            return 0
+        }
+    }
 }
 
 protocol ImageCollectionViewCellDelegate: AnyObject {
@@ -33,6 +41,8 @@ class ImageCollectionViewCell: UICollectionViewCell {
     
     func configureUI() {
         imageView.image = UIImage(named: dataSource?.image ?? "")
+        print("cornerRadius", CGFloat(dataSource?.cornerRadius ?? 0))
+        imageView.layer.cornerRadius = dataSource?.cornerRadius ?? 0
     }
     
     @IBAction func imageTapped() {

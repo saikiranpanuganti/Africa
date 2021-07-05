@@ -16,6 +16,7 @@ class HomeTabViewController: BaseViewController {
         super.viewDidLoad()
 
         viewModel.delegate = self
+        homeTabView.delegate = self
         homeTabView.setUpUI()
         viewModel.getData()
     }
@@ -29,5 +30,14 @@ extension HomeTabViewController: HomeTabViewModelDelegate {
     func updateUI() {
         homeTabView.dataSource = viewModel
         homeTabView.updateUI()
+    }
+}
+
+extension HomeTabViewController: HomeTabViewDelegate {
+    func leftButtonTapped() {
+        viewModel.leftButtonTapped()
+    }
+    func rightButtonTapped() {
+        viewModel.rightButtonTapped()
     }
 }

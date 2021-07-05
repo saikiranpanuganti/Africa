@@ -8,7 +8,6 @@
 import UIKit
 
 protocol BannerCollectionViewCellDataSource {
-    var title: String {get}
     var bannerItems: [ImageCollectionViewCellDataSource] {get}
 }
 
@@ -18,9 +17,6 @@ protocol BannerCollectionViewCellDelegate: AnyObject {
 
 class BannerCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var titleView: UIView!
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var separator: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     
@@ -37,15 +33,9 @@ class BannerCollectionViewCell: UICollectionViewCell {
         collectionView.register(UINib(nibName: "ImageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImageCollectionViewCell")
         collectionView.delegate = self
         collectionView.dataSource = self
-        setUpUI()
-    }
-
-    func setUpUI() {
-        title.font = Fonts.shared.heavy10
     }
     
     func configureUI() {
-        title.text = dataSource?.title ?? ""
         pageControl.numberOfPages = dataSource?.bannerItems.count ?? 0
         collectionView.reloadData()
     }
@@ -81,7 +71,7 @@ extension BannerCollectionViewCell: UICollectionViewDelegate{
 
 extension BannerCollectionViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: ScreenWidth, height: ScreenWidth*0.8)
+        return CGSize(width: ScreenWidth, height: ScreenWidth*0.75)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
