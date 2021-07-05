@@ -51,7 +51,7 @@ class NavBarView: UIView {
     private lazy var backImageView : UIImageView = {
         let backImage = UIImageView()
 //        backImage.backgroundColor = UIColor.blue
-        backImage.image = UIImage.init(named: Images.shared.back_orange)
+        backImage.image = Images.shared.back_orange
         backImage.translatesAutoresizingMaskIntoConstraints = false
         
         return backImage

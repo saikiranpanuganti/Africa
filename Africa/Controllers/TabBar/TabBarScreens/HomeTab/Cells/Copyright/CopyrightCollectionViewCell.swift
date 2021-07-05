@@ -22,7 +22,7 @@ class CopyrightCollectionViewCell: UICollectionViewCell {
     }
 
     func setUpUI() {
-        imageView.image = UIImage.init(named: Images.shared.compass)?.withRenderingMode(.alwaysTemplate)
+        imageView.image = Images.shared.copyrightCompass?.withRenderingMode(.alwaysTemplate)
         imageView.tintColor = Colors.shared.copyrights
         copyrights.text = Strings.shared.copyrights
         copyrights.font = Fonts.shared.regular2

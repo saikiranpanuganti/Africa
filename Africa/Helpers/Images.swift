@@ -14,20 +14,23 @@ class Images {
         updateImages(theme: Config.shared.theme)
     }
     
-    var compass = "compass"
-    var logo = "logo"
-    var back_orange = "back_orange"
+    var compass = UIImage(named: "compass")
+    var copyrightCompass = UIImage(named: "compass")
+    var logo = UIImage(named: "logo")
+    var back_orange = UIImage(named: "back_orange")
     
     func updateImages(theme: UIUserInterfaceStyle) {
         switch theme {
         case .dark:
-            compass = "compass"
-            logo = "logo"
-            back_orange = "back_orange"
+            compass = UIImage(named: "compass")
+            copyrightCompass = UIImage(named: "compass")
+            logo = UIImage(named: "logo")
+            back_orange = UIImage(named: "back_orange")
         default:
-            compass = "compass"
-            logo = "logo"
-            back_orange = "back_orange"
+            compass = UIImage(named: "compass")?.withTintColor(UIColor.black, renderingMode: .alwaysOriginal)
+            copyrightCompass = UIImage(named: "compass")
+            logo = UIImage(named: "logo")
+            back_orange = UIImage(named: "back_orange")
         }
     }
 }
