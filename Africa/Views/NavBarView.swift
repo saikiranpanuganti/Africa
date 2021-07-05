@@ -23,6 +23,11 @@ class NavBarView: UIView {
         }
     }
     
+    var backButtonisHidden: Bool = false {
+        didSet {
+            backView.isHidden = true
+        }
+    }
     
     lazy var backView : UIView = {
         let view = UIView()

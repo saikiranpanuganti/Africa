@@ -28,6 +28,7 @@ class HomeTabView: UIView {
     
     func addNavBarView() {
         navBarView = NavBarView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: topSafeAreaHeight + 44))
+        navBarView.isHidden = true
         
         self.addSubview(navBarView)
     }
@@ -100,5 +101,11 @@ extension HomeTabView: AnimalDetailsCollectionViewCellDelegate {
 }
 
 extension HomeTabView: BannerCollectionViewCellDelegate {
-    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y > 35.0 {
+            print("Show title on NavBar")
+        }else {
+            print("End title on NavBar")
+        }
+    }
 }
