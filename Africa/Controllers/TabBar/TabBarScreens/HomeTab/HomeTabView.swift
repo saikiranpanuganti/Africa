@@ -28,6 +28,7 @@ class HomeTabView: UIView {
     
     func addNavBarView() {
         navBarView = NavBarView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: topSafeAreaHeight + 44))
+        navBarView.title = Strings.shared.appName
         navBarView.backView.isHidden = true
         
         self.addSubview(navBarView)
@@ -82,7 +83,7 @@ extension HomeTabView : UICollectionViewDelegate {
 extension HomeTabView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0{
-            return CGSize(width: ScreenWidth, height: ScreenWidth*0.8 + 45 + topSafeAreaHeight)
+            return CGSize(width: ScreenWidth, height: ScreenWidth*0.8 + 89)//45+NavBarHeight
         }else if indexPath.section == 1 {
             return CGSize(width: ScreenWidth, height: 106)
         }
@@ -102,10 +103,10 @@ extension HomeTabView: AnimalDetailsCollectionViewCellDelegate {
 
 extension HomeTabView: BannerCollectionViewCellDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.y > 35.0 {
-            print("Show title on NavBar")
+        if scrollView.contentOffset.y > 20.0 {
+            navBarView.hideTitle = false
         }else {
-            print("End title on NavBar")
+            navBarView.hideTitle = true
         }
     }
 }

@@ -15,7 +15,7 @@ class Colors {
     
     var splashBackground = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //rgba(255, 255, 255, 1)
     var orangeAppColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1) //rgba(255, 175, 0, 1)
-    var tabBarBackrgound = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5) //rgba(0, 0, 0, 0.5)
+    var tabBarBackrgound = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.9) //rgba(0, 0, 0, 0.90)
     var greyTintColor = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 1) //rgba(70, 70, 74, 0)
     var copyrights = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 1) //rgba(70, 70, 74, 0)
     
@@ -38,7 +38,7 @@ class Colors {
         case .dark:
             splashBackground = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) //rgba(0, 0, 0, 1)
             orangeAppColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1) //rgba(255, 175, 0, 1)
-            tabBarBackrgound = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5) //rgba(0, 0, 0, 0.5)
+            tabBarBackrgound = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.9) //rgba(0, 0, 0, 0.90)
             greyTintColor = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 1) //rgba(70, 70, 74, 0)
             copyrights = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 1) //rgba(70, 70, 74, 0)
             
@@ -58,7 +58,7 @@ class Colors {
         default:
             splashBackground = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //rgba(255, 255, 255, 1)
             orangeAppColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1) //rgba(255, 175, 0, 1)
-            tabBarBackrgound = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5) //rgba(0, 0, 0, 0.5)
+            tabBarBackrgound = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.9) //rgba(0, 0, 0, 0.9)
             greyTintColor = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 1) //rgba(70, 70, 74, 0)
             copyrights = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) //rgba(0, 0, 0, 0)
             

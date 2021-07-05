@@ -29,6 +29,18 @@ class NavBarView: UIView {
         }
     }
     
+    var title: String = "" {
+        didSet {
+            titleLabel.text = title
+        }
+    }
+    
+    var hideTitle: Bool = true {
+        didSet {
+            titleLabel.isHidden = hideTitle
+        }
+    }
+    
     lazy var backView : UIView = {
         let view = UIView()
 //        view.backgroundColor = UIColor.red
@@ -49,7 +61,7 @@ class NavBarView: UIView {
         let label = UILabel()
 //        label.backgroundColor = UIColor.blue
         label.text = Strings.shared.back
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.font = Fonts.shared.regular3
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
         label.textColor = UIColor.white
@@ -101,6 +113,18 @@ class NavBarView: UIView {
         return backImage
     }()
     
+    lazy var titleLabel : UILabel = {
+        let label = UILabel()
+//        label.backgroundColor = UIColor.blue
+        label.font = Fonts.shared.bold3
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
+        label.textColor = UIColor.white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        return label
+    }()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -138,6 +162,9 @@ class NavBarView: UIView {
         
         firstButtonImage.isHidden = true
         secondButtonImage.isHidden = true
+        
+        self.addSubview(titleLabel)
+        titleLabel.isHidden = true
     }
     
     func setUpConstraints() {
@@ -162,6 +189,9 @@ class NavBarView: UIView {
         buttonsStack.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -15).isActive = true
         buttonsStack.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: topSafeAreaHeight/2).isActive = true
         buttonsStack.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        
+        titleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: 0).isActive = true
+        titleLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: topSafeAreaHeight/2).isActive = true
     }
     
     @objc func backButtonTapped(_ sender: UIButton) {
