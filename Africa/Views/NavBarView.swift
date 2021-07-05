@@ -7,19 +7,32 @@
 
 import UIKit
 
+protocol NavBarViewDelegate: AnyObject {
+    func backButtonTapped()
+    func leftButtonTapped()
+    func rightButtonTapped()
+}
+
+extension NavBarViewDelegate {
+    func backButtonTapped() { }
+    func leftButtonTapped() { }
+    func rightButtonTapped() { }
+}
+
 class NavBarView: UIView {
+    weak var delegate: NavBarViewDelegate?
     
     var leftButtonImage: UIImage? {
         didSet {
             firstButtonImage.isHidden = false
-            firstButtonImage.image = leftButtonImage
+            firstButtonImage.image = leftButtonImage?.withRenderingMode(.alwaysTemplate)
         }
     }
     
     var rightButtonImage: UIImage? {
         didSet {
             secondButtonImage.isHidden = false
-            secondButtonImage.image = rightButtonImage
+            secondButtonImage.image = rightButtonImage?.withRenderingMode(.alwaysTemplate)
         }
     }
     
@@ -231,14 +244,14 @@ class NavBarView: UIView {
     }
     
     @objc private func backButtonTapped(_ sender: UIButton) {
-        print("backButtonTapped")
+        delegate?.rightButtonTapped()
     }
     
     @objc private func leftButtonTapped(tapGestureRecognizer: UITapGestureRecognizer) {
-        print("leftButtonTapped")
+        delegate?.leftButtonTapped()
     }
     
     @objc private func rightButtonTapped(tapGestureRecognizer: UITapGestureRecognizer) {
-        print("rightButtonTapped")
+        delegate?.rightButtonTapped()
     }
 }

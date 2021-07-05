@@ -35,4 +35,11 @@ class CopyrightCollectionViewCell: UICollectionViewCell {
         betterApps.textColor = Colors.shared.copyrights
         seperator.backgroundColor = Colors.shared.greyTintColor
     }
+    
+    func configureUI() {
+        imageView.tintColor = Colors.shared.copyrights
+        copyrights.textColor = Colors.shared.copyrights
+        rightsReserved.textColor = Colors.shared.copyrights
+        betterApps.textColor = Colors.shared.copyrights
+    }
 }

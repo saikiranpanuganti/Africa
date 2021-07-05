@@ -51,7 +51,6 @@ class BannerCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func pageControllerAction(_ sender: UIPageControl) {
-        print("sender.currentPage ", sender.currentPage)
         self.collectionView.scrollToItem(at: IndexPath(row: sender.currentPage, section: 0), at: .centeredHorizontally, animated: true)
     }
 }

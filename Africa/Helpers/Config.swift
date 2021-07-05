@@ -23,7 +23,6 @@ class Config {
     }
 
     func updateTheme(theme: UIUserInterfaceStyle) {
-        self.theme = theme
         Images.shared.updateImages(theme: theme)
         Colors.shared.updateColors(theme: theme)
         NotificationCenterAdapter.postNotification(info: [NotificationCenterAdapter.eventKey:NotificationType.ThemeChanged.rawValue])

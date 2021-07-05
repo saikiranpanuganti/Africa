@@ -12,7 +12,11 @@ protocol HomeTabViewModelDelegate: BaseViewModelDelegate {
 }
 
 class HomeTabViewModel: BaseViewModel {
-    weak var delegate: HomeTabViewModelDelegate?
+    weak var delegate: HomeTabViewModelDelegate? {
+        didSet {
+            baseDelegate = delegate
+        }
+    }
     
     var animals: [Animal] = []
     var banner: Banner?
@@ -22,6 +26,10 @@ class HomeTabViewModel: BaseViewModel {
         let coverImages: [CoverImage] = Bundle.main.decode("covers.json")
         banner = Banner(banners: coverImages)
         delegate?.updateUI()
+    }
+    
+    override func notificationReceived(notfication: NSNotification?) {
+        super.notificationReceived(notfication: notfication)
     }
 }
 

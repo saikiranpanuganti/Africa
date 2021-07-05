@@ -30,8 +30,9 @@ class HomeTabView: UIView {
         navBarView = NavBarView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: topSafeAreaHeight + 44))
         navBarView.title = Strings.shared.appName
         navBarView.backButtonisHidden = true
-        navBarView.leftButtonImage = Images.shared.squareFillTextGrid1x2?.withRenderingMode(.alwaysTemplate)
-        navBarView.rightButtonImage = Images.shared.squareGrid2x2?.withRenderingMode(.alwaysTemplate)
+        navBarView.leftButtonImage = Images.shared.squareFillTextGrid1x2
+        navBarView.rightButtonImage = Images.shared.squareGrid2x2
+        navBarView.delegate = self
         
         self.addSubview(navBarView)
     }
@@ -72,9 +73,13 @@ extension HomeTabView : UICollectionViewDataSource {
                 cell.dataSource = dataSource?.animals[indexPath.row]
                 return cell
             }
+        }else {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CopyrightCollectionViewCell", for: indexPath) as? CopyrightCollectionViewCell {
+                cell.configureUI()
+                return cell
+            }
         }
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CopyrightCollectionViewCell", for: indexPath)
-        return cell
+        return UICollectionViewCell()
     }
 }
 
@@ -110,5 +115,14 @@ extension HomeTabView: BannerCollectionViewCellDelegate {
         }else {
             navBarView.hideTitle = true
         }
+    }
+}
+
+extension HomeTabView: NavBarViewDelegate {
+    func leftButtonTapped() {
+        print("leftButtonTapped")
+    }
+    func rightButtonTapped() {
+        print("rightButtonTapped")
     }
 }
