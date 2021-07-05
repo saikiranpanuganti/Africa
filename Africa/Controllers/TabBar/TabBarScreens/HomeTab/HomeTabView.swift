@@ -30,6 +30,8 @@ class HomeTabView: UIView {
         navBarView = NavBarView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: topSafeAreaHeight + 44))
         navBarView.title = Strings.shared.appName
         navBarView.backButtonisHidden = true
+        navBarView.leftButtonImage = Images.shared.squareFillTextGrid1x2?.withRenderingMode(.alwaysTemplate)
+        navBarView.rightButtonImage = Images.shared.squareGrid2x2?.withRenderingMode(.alwaysTemplate)
         
         self.addSubview(navBarView)
     }

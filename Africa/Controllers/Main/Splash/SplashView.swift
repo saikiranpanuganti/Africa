@@ -12,7 +12,7 @@ class SplashView: UIView {
     @IBOutlet weak var imageView: UIImageView!
     
     func setUpUI() {
-        self.backgroundColor = Colors.shared.splashBackground
+        self.backgroundColor = Colors.shared.whiteBlackBackground
         
         imageView.image = Images.shared.compass
     }

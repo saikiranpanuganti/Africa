@@ -15,7 +15,8 @@ class Colors {
         updateColors(theme: Config.shared.theme)
     }
     
-    var splashBackground = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //rgba(255, 255, 255, 1)
+    var whiteBlackBackground = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //rgba(255, 255, 255, 1)
+    var blackWhiteBackground = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) //rgba(0, 0, 0, 1)
     var orangeAppColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1) //rgba(255, 175, 0, 1)
     var tabBarBackrgound = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.9) //rgba(0, 0, 0, 0.90)
     var greyTintColor = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 1) //rgba(70, 70, 74, 0)
@@ -38,7 +39,8 @@ class Colors {
     func updateColors(theme: UIUserInterfaceStyle) {
         switch theme {
         case .dark:
-            splashBackground = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) //rgba(0, 0, 0, 1)
+            whiteBlackBackground = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) //rgba(0, 0, 0, 1)
+            blackWhiteBackground = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //rgba(255, 255, 255, 1)
             orangeAppColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1) //rgba(255, 175, 0, 1)
             tabBarBackrgound = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.9) //rgba(0, 0, 0, 0.90)
             greyTintColor = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 1) //rgba(70, 70, 74, 0)
@@ -58,7 +60,8 @@ class Colors {
             greyTextColor = #colorLiteral(red: 0.7019607843, green: 0.7019607843, blue: 0.7019607843, alpha: 1) //rgba(179, 179, 179, 1)
             lightBlueColor = #colorLiteral(red: 0.3098039216, green: 0.6196078431, blue: 0.9490196078, alpha: 1) //rgba(79, 158, 242, 1)
         default:
-            splashBackground = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //rgba(255, 255, 255, 1)
+            whiteBlackBackground = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //rgba(255, 255, 255, 1)
+            blackWhiteBackground = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) //rgba(0, 0, 0, 1)
             orangeAppColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1) //rgba(255, 175, 0, 1)
             tabBarBackrgound = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.9) //rgba(0, 0, 0, 0.9)
             greyTintColor = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 1) //rgba(70, 70, 74, 0)
