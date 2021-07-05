@@ -10,7 +10,9 @@ import UIKit
 class Images {
     static let shared: Images = Images()
     
-    private init() { }
+    private init() {
+        updateImages(theme: Config.shared.theme)
+    }
     
     var compass = "compass"
     var logo = "logo"

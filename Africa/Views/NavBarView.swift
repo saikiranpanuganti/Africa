@@ -41,14 +41,14 @@ class NavBarView: UIView {
         }
     }
     
-    lazy var backView : UIView = {
+    private lazy var backView : UIView = {
         let view = UIView()
 //        view.backgroundColor = UIColor.red
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    lazy var backImageView : UIImageView = {
+    private lazy var backImageView : UIImageView = {
         let backImage = UIImageView()
 //        backImage.backgroundColor = UIColor.blue
         backImage.image = UIImage.init(named: Images.shared.back_orange)
@@ -57,7 +57,7 @@ class NavBarView: UIView {
         return backImage
     }()
     
-    lazy var backLabel : UILabel = {
+    private lazy var backLabel : UILabel = {
         let label = UILabel()
 //        label.backgroundColor = UIColor.blue
         label.text = Strings.shared.back
@@ -70,7 +70,7 @@ class NavBarView: UIView {
         return label
     }()
     
-    lazy var backButton : UIButton = {
+    private lazy var backButton : UIButton = {
         let button = UIButton()
         button.addTarget(self, action: #selector(backButtonTapped(_:)), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -78,7 +78,7 @@ class NavBarView: UIView {
         return button
     }()
     
-    lazy var buttonsStack : UIStackView = {
+    private lazy var buttonsStack : UIStackView = {
         let stackView = UIStackView()
 //        stackView.backgroundColor = UIColor.green
         stackView.axis = .horizontal
@@ -89,7 +89,7 @@ class NavBarView: UIView {
         return stackView
     }()
     
-    lazy var firstButtonImage : UIImageView = {
+    private lazy var firstButtonImage : UIImageView = {
         let backImage = UIImageView()
 //        backImage.backgroundColor = UIColor.blue
         backImage.isUserInteractionEnabled = true
@@ -101,7 +101,7 @@ class NavBarView: UIView {
         return backImage
     }()
     
-    lazy var secondButtonImage : UIImageView = {
+    private lazy var secondButtonImage : UIImageView = {
         let backImage = UIImageView()
 //        backImage.backgroundColor = UIColor.blue
         backImage.isUserInteractionEnabled = true
@@ -113,13 +113,12 @@ class NavBarView: UIView {
         return backImage
     }()
     
-    lazy var titleLabel : UILabel = {
+    private lazy var titleLabel : UILabel = {
         let label = UILabel()
 //        label.backgroundColor = UIColor.blue
         label.font = Fonts.shared.bold3
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
-        label.textColor = UIColor.white
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
@@ -140,17 +139,18 @@ class NavBarView: UIView {
         setUpUI()
     }
     
-    func computeValues() {
+    private func computeValues() {
         
     }
     
-    func setUpUI() {
-        self.backgroundColor = Colors.shared.tabBarBackrgound
+    private func setUpUI() {
+        updateTheme()
         addSubViews()
         setUpConstraints()
+        NotificationCenter.default.addObserver(self, selector: #selector(recievedNotification(notification:)), name: .RecievedNotification, object: nil)
     }
     
-    func addSubViews() {
+    private func addSubViews() {
         self.addSubview(backView)
         backView.addSubview(backImageView)
         backView.addSubview(backLabel)
@@ -167,7 +167,7 @@ class NavBarView: UIView {
         titleLabel.isHidden = true
     }
     
-    func setUpConstraints() {
+    private func setUpConstraints() {
         backView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0).isActive = true
         backView.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: topSafeAreaHeight/2).isActive = true
         backView.heightAnchor.constraint(equalToConstant: 30).isActive = true
@@ -194,15 +194,30 @@ class NavBarView: UIView {
         titleLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: topSafeAreaHeight/2).isActive = true
     }
     
-    @objc func backButtonTapped(_ sender: UIButton) {
+    private func updateTheme() {
+        self.backgroundColor = Colors.shared.tabBarBackrgound
+    }
+    
+    @objc private func recievedNotification(notification: NSNotification?) {
+        if let userInfo = notification?.object as? [String: Any], let type = userInfo[NotificationCenterAdapter.typeKey] as? NotificationType {
+            switch type {
+            case .ThemeChanged:
+                updateTheme()
+            default:
+                break
+            }
+        }
+    }
+    
+    @objc private func backButtonTapped(_ sender: UIButton) {
         print("backButtonTapped")
     }
     
-    @objc func leftButtonTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+    @objc private func leftButtonTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         print("leftButtonTapped")
     }
     
-    @objc func rightButtonTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+    @objc private func rightButtonTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         print("rightButtonTapped")
     }
 }

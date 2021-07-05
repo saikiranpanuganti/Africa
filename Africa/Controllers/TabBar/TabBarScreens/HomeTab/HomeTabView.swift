@@ -29,7 +29,7 @@ class HomeTabView: UIView {
     func addNavBarView() {
         navBarView = NavBarView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: topSafeAreaHeight + 44))
         navBarView.title = Strings.shared.appName
-        navBarView.backView.isHidden = true
+        navBarView.backButtonisHidden = true
         
         self.addSubview(navBarView)
     }

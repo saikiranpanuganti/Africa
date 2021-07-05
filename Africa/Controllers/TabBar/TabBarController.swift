@@ -14,6 +14,7 @@ class TabBarController: UITabBarController {
         
         tabBarAppearance()
         setUpTabBar()
+        NotificationCenter.default.addObserver(self, selector: #selector(recievedNotification(notification:)), name: .RecievedNotification, object: nil)
     }
     
     func tabBarAppearance() {
@@ -41,5 +42,19 @@ class TabBarController: UITabBarController {
         
         setViewControllers(controllers, animated: true)
     }
+    
+    func updateTheme() {
+        self.tabBar.backgroundColor = Colors.shared.tabBarBackrgound
+    }
 
+    @objc func recievedNotification(notification: NSNotification?) {
+        if let userInfo = notification?.object as? [String: Any], let type = userInfo[NotificationCenterAdapter.typeKey] as? NotificationType {
+            switch type {
+            case .ThemeChanged:
+                updateTheme()
+            default:
+                break
+            }
+        }
+    }
 }
