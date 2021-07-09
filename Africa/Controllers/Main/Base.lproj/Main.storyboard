@@ -60,6 +60,39 @@
             </objects>
             <point key="canvasLocation" x="120" y="69"/>
         </scene>
+        <!--Description View Controller-->
+        <scene sceneID="UXE-Lw-O8U">
+            <objects>
+                <viewController storyboardIdentifier="DescriptionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yme-ua-BEO" customClass="DescriptionViewController" customModule="Africa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="awr-tk-Wz0" customClass="DescriptionView" customModule="Africa" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bxd-hq-IWC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JoB-eZ-4Tb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Bxd-hq-IWC" secondAttribute="bottom" id="aCB-dd-5xE"/>
+                            <constraint firstItem="Bxd-hq-IWC" firstAttribute="top" secondItem="awr-tk-Wz0" secondAttribute="top" id="gPb-1b-HTX"/>
+                            <constraint firstItem="JoB-eZ-4Tb" firstAttribute="trailing" secondItem="Bxd-hq-IWC" secondAttribute="trailing" id="uA8-GX-lsZ"/>
+                            <constraint firstItem="Bxd-hq-IWC" firstAttribute="leading" secondItem="JoB-eZ-4Tb" secondAttribute="leading" id="x2W-lb-fey"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="descripitionTableView" destination="Bxd-hq-IWC" id="uUN-vg-W8L"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionView" destination="awr-tk-Wz0" id="r7f-sa-aAM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joT-S6-Wfq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="798"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

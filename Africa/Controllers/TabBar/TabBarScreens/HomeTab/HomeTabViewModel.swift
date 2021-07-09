@@ -26,7 +26,7 @@ class HomeTabViewModel: BaseViewModel {
     
     func getData() {
         animals = Bundle.main.decode("animals.json")
-        let coverImages: [CoverImage] = Bundle.main.decode("covers.json")
+        let coverImages: [Animal] = Bundle.main.decode("covers.json")
         banner = Banner(banners: coverImages)
         getGridAnimals()
         delegate?.updateUI()
@@ -59,6 +59,29 @@ class HomeTabViewModel: BaseViewModel {
             }
             
             delegate?.updateUI()
+        }
+    }
+    
+    func imageTapped(dataSource: ImageCollectionViewCellDataSource?) {
+        if let animal = dataSource as? Animal {
+            if let controller = Controller.description.getViewController() as? DescriptionViewController {
+                controller.viewModel.animal = animal
+                delegate?.push(controller)
+            }
+        }else if let coverImage = dataSource as? Animal {
+            if let controller = Controller.description.getViewController() as? DescriptionViewController {
+                controller.viewModel.animal = coverImage
+                delegate?.push(controller)
+            }
+        }
+    }
+    
+    func animalDetailsTapped(dataSource: AnimalDetailsCollectionViewCellDataSource?) {
+        if let animal = dataSource as? Animal {
+            if let controller = Controller.description.getViewController() as? DescriptionViewController {
+                controller.viewModel.animal = animal
+                delegate?.push(controller)
+            }
         }
     }
 }

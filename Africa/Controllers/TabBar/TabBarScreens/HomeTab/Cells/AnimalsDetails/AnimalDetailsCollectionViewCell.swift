@@ -8,7 +8,7 @@
 import UIKit
 
 protocol AnimalDetailsCollectionViewCellDelegate: AnyObject {
-    
+    func animalDetailsTapped(dataSource: AnimalDetailsCollectionViewCellDataSource?)
 }
 
 protocol AnimalDetailsCollectionViewCellDataSource {
@@ -53,5 +53,9 @@ class AnimalDetailsCollectionViewCell: UICollectionViewCell {
         imageView.image = UIImage.init(named: dataSource?.image ?? "")
         title.text = dataSource?.title ?? ""
         subTitle.text = dataSource?.subTitle ?? ""
+    }
+    
+    @IBAction func animalDetailsTapped(sender: UIButton) {
+        delegate?.animalDetailsTapped(dataSource: dataSource)
     }
 }

@@ -40,4 +40,12 @@ extension HomeTabViewController: HomeTabViewDelegate {
     func rightButtonTapped() {
         viewModel.rightButtonTapped()
     }
+    
+    func imageTapped(dataSource: ImageCollectionViewCellDataSource?) {
+        viewModel.imageTapped(dataSource: dataSource)
+    }
+    
+    func animalDetailsTapped(dataSource: AnimalDetailsCollectionViewCellDataSource?) {
+        viewModel.animalDetailsTapped(dataSource: dataSource)
+    }
 }

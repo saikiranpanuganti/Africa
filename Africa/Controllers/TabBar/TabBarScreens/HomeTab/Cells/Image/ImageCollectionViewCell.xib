@@ -23,13 +23,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQx-I8-y72">
                                 <rect key="frame" x="0.0" y="0.0" width="271" height="239"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZz-DT-E1c">
+                                <rect key="frame" x="0.0" y="0.0" width="271" height="239"/>
+                                <connections>
+                                    <action selector="imageTapped" destination="gTV-IL-0wX" eventType="touchUpInside" id="peB-qX-fkj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="SQx-I8-y72" secondAttribute="bottom" id="C5H-pZ-s3o"/>
                             <constraint firstItem="SQx-I8-y72" firstAttribute="leading" secondItem="vwe-Cc-U2C" secondAttribute="leading" id="DCa-uC-fUx"/>
                             <constraint firstAttribute="trailing" secondItem="SQx-I8-y72" secondAttribute="trailing" id="EqV-FH-gQh"/>
+                            <constraint firstItem="DZz-DT-E1c" firstAttribute="top" secondItem="vwe-Cc-U2C" secondAttribute="top" id="JKn-Qg-PKL"/>
+                            <constraint firstAttribute="bottom" secondItem="DZz-DT-E1c" secondAttribute="bottom" id="Oeh-r1-esK"/>
                             <constraint firstItem="SQx-I8-y72" firstAttribute="top" secondItem="vwe-Cc-U2C" secondAttribute="top" id="XUK-kY-cVE"/>
+                            <constraint firstItem="DZz-DT-E1c" firstAttribute="leading" secondItem="vwe-Cc-U2C" secondAttribute="leading" id="sCA-bJ-oA8"/>
+                            <constraint firstAttribute="trailing" secondItem="DZz-DT-E1c" secondAttribute="trailing" id="yC3-38-Wst"/>
                         </constraints>
                     </view>
                 </subviews>

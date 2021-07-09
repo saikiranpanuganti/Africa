@@ -12,6 +12,7 @@ enum Controller {
     case tabBar
     case homeTabNavigation
     case homeTab
+    case description
     
     func getViewController() -> UIViewController {
         
@@ -31,6 +32,9 @@ enum Controller {
         case .homeTab:
             storyBoardId = "TabBar"
             controllerId = "HomeTabViewController"
+        case .description:
+            storyBoardId = "Main"
+            controllerId = "DescriptionViewController"
         }
         
         let storyboard = UIStoryboard(name: storyBoardId, bundle: nil)

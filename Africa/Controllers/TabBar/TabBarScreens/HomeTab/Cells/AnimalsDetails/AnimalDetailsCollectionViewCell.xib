@@ -55,23 +55,33 @@
                                     <constraint firstAttribute="height" constant="0.5" id="hnu-Os-pzK"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4T-KK-Y1q">
+                                <rect key="frame" x="0.0" y="0.0" width="463" height="156"/>
+                                <connections>
+                                    <action selector="animalDetailsTappedWithSender:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Liw-MX-th7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="nIq-iw-lJo" secondAttribute="bottom" id="1UJ-Cg-fxw"/>
+                            <constraint firstItem="j4T-KK-Y1q" firstAttribute="leading" secondItem="WB1-x6-59J" secondAttribute="leading" id="2rK-Tk-M9c"/>
                             <constraint firstAttribute="trailing" secondItem="F2w-02-R9F" secondAttribute="trailing" constant="10" id="6C0-Am-3RV"/>
                             <constraint firstItem="F2w-02-R9F" firstAttribute="leading" secondItem="6Mq-sA-vWN" secondAttribute="trailing" constant="10" id="8PO-iL-5va"/>
                             <constraint firstAttribute="trailing" secondItem="nIq-iw-lJo" secondAttribute="trailing" constant="20" id="GHk-Xv-Bo3"/>
                             <constraint firstItem="6Mq-sA-vWN" firstAttribute="leading" secondItem="kus-bX-0u0" secondAttribute="trailing" constant="10" id="LaS-zd-ROx"/>
                             <constraint firstItem="6Mq-sA-vWN" firstAttribute="top" secondItem="kus-bX-0u0" secondAttribute="top" constant="15" id="PaP-NU-dfT"/>
+                            <constraint firstAttribute="bottom" secondItem="j4T-KK-Y1q" secondAttribute="bottom" id="Pnl-P6-6gg"/>
                             <constraint firstItem="kus-bX-0u0" firstAttribute="leading" secondItem="WB1-x6-59J" secondAttribute="leading" constant="10" id="WdQ-1a-krr"/>
                             <constraint firstItem="FOJ-ZL-giR" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="kus-bX-0u0" secondAttribute="bottom" constant="-10" id="Y1a-Vg-I1O"/>
                             <constraint firstItem="kus-bX-0u0" firstAttribute="top" secondItem="WB1-x6-59J" secondAttribute="top" constant="7" id="a0W-km-XSk"/>
                             <constraint firstItem="FOJ-ZL-giR" firstAttribute="top" secondItem="6Mq-sA-vWN" secondAttribute="bottom" id="aGV-UQ-5mA"/>
                             <constraint firstItem="F2w-02-R9F" firstAttribute="leading" secondItem="FOJ-ZL-giR" secondAttribute="trailing" constant="10" id="eAx-6W-BPF"/>
                             <constraint firstItem="FOJ-ZL-giR" firstAttribute="leading" secondItem="kus-bX-0u0" secondAttribute="trailing" constant="10" id="f30-zV-xqN"/>
+                            <constraint firstAttribute="trailing" secondItem="j4T-KK-Y1q" secondAttribute="trailing" id="gyJ-Pg-2fZ"/>
                             <constraint firstItem="nIq-iw-lJo" firstAttribute="leading" secondItem="WB1-x6-59J" secondAttribute="leading" constant="20" id="jaO-u1-e50"/>
                             <constraint firstAttribute="bottom" secondItem="kus-bX-0u0" secondAttribute="bottom" constant="8" id="otE-k2-x6M"/>
+                            <constraint firstItem="j4T-KK-Y1q" firstAttribute="top" secondItem="WB1-x6-59J" secondAttribute="top" id="rXV-m7-iWc"/>
                             <constraint firstItem="F2w-02-R9F" firstAttribute="centerY" secondItem="WB1-x6-59J" secondAttribute="centerY" id="zPP-rI-KBf"/>
                         </constraints>
                     </view>

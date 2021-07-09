@@ -197,8 +197,8 @@ class NavBarView: UIView {
         
         backImageView.leftAnchor.constraint(equalTo: backView.leftAnchor, constant: 10).isActive = true
         backImageView.centerYAnchor.constraint(equalTo: backView.centerYAnchor, constant: 0).isActive = true
-        backImageView.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        backImageView.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        backImageView.widthAnchor.constraint(equalToConstant: 18).isActive = true
+        backImageView.heightAnchor.constraint(equalToConstant: 18).isActive = true
         
         backLabel.leftAnchor.constraint(equalTo: backImageView.rightAnchor, constant: 5).isActive = true
         backLabel.centerYAnchor.constraint(equalTo: backView.centerYAnchor, constant: 0).isActive = true
@@ -244,7 +244,7 @@ class NavBarView: UIView {
     }
     
     @objc private func backButtonTapped(_ sender: UIButton) {
-        delegate?.rightButtonTapped()
+        delegate?.backButtonTapped()
     }
     
     @objc private func leftButtonTapped(tapGestureRecognizer: UITapGestureRecognizer) {

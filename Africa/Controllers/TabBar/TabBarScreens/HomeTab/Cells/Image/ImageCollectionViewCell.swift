@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ImageCollectionViewCellDataSource {
-    var image: String {get}
+    var coverImage: String? {get}
     var cornerRadius: CGFloat? {get}
 }
 extension ImageCollectionViewCellDataSource {
@@ -40,7 +40,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
     }
     
     func configureUI() {
-        imageView.image = UIImage(named: dataSource?.image ?? "")
+        imageView.image = UIImage(named: dataSource?.coverImage ?? "")
         imageView.layer.cornerRadius = dataSource?.cornerRadius ?? 0
     }
     

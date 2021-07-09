@@ -10,6 +10,8 @@ import UIKit
 protocol HomeTabViewDelegate: AnyObject {
     func leftButtonTapped()
     func rightButtonTapped()
+    func imageTapped(dataSource: ImageCollectionViewCellDataSource?)
+    func animalDetailsTapped(dataSource: AnimalDetailsCollectionViewCellDataSource?)
 }
 
 protocol HomeTabViewDataSource: AnyObject {
@@ -173,7 +175,9 @@ extension HomeTabView: UICollectionViewDelegateFlowLayout {
 }
 
 extension HomeTabView: AnimalDetailsCollectionViewCellDelegate {
-    
+    func animalDetailsTapped(dataSource: AnimalDetailsCollectionViewCellDataSource?) {
+        delegate?.animalDetailsTapped(dataSource: dataSource)
+    }
 }
 
 extension HomeTabView: BannerCollectionViewCellDelegate {
@@ -188,7 +192,7 @@ extension HomeTabView: BannerCollectionViewCellDelegate {
 
 extension HomeTabView: ImageCollectionViewCellDelegate {
     func imageTapped(dataSource: ImageCollectionViewCellDataSource?) {
-        
+        delegate?.imageTapped(dataSource: dataSource)
     }
 }
 

@@ -12,7 +12,7 @@ protocol BannerCollectionViewCellDataSource {
 }
 
 protocol BannerCollectionViewCellDelegate: AnyObject {
-    
+    func imageTapped(dataSource: ImageCollectionViewCellDataSource?)
 }
 
 class BannerCollectionViewCell: UICollectionViewCell {
@@ -83,7 +83,7 @@ extension BannerCollectionViewCell: UICollectionViewDelegateFlowLayout {
 
 extension BannerCollectionViewCell: ImageCollectionViewCellDelegate {
     func imageTapped(dataSource: ImageCollectionViewCellDataSource?) {
-        
+        delegate?.imageTapped(dataSource: dataSource)
     }
 }
 

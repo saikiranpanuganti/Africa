@@ -8,6 +8,8 @@
 import UIKit
 
 struct Animal: Codable {
+    let coverId: Int?
+    let coverImage: String?
     let id: String
     let name: String
     let headline: String
@@ -17,6 +19,10 @@ struct Animal: Codable {
     let gallery: [String]
     let fact: [String]
     var cornerRadius: CGFloat? = 0
+}
+
+struct Banner {
+    let banners: [Animal]
 }
 
 extension Animal: AnimalDetailsCollectionViewCellDataSource {
@@ -30,4 +36,14 @@ extension Animal: AnimalDetailsCollectionViewCellDataSource {
 
 extension Animal: ImageCollectionViewCellDataSource {
     
+}
+
+extension Banner: BannerCollectionViewCellDataSource {
+    var title: String {
+        return Strings.shared.appName
+    }
+    
+    var bannerItems: [ImageCollectionViewCellDataSource] {
+        return banners
+    }
 }
