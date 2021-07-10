@@ -42,6 +42,12 @@ class NavBarView: UIView {
         }
     }
     
+    var backTextColor: UIColor = .white {
+        didSet {
+            backLabel.textColor = backTextColor
+        }
+    }
+    
     var title: String = "" {
         didSet {
             titleLabel.text = title

@@ -47,3 +47,7 @@ extension Banner: BannerCollectionViewCellDataSource {
         return banners
     }
 }
+
+extension Animal: ImageTableViewCellDataSource {
+    
+}

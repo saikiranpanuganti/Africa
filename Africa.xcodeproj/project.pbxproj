@@ -10,6 +10,8 @@
 		7F2E0BF02697F87300196AC0 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E0BEF2697F87300196AC0 /* DescriptionViewController.swift */; };
 		7F2E0BF4269828FF00196AC0 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E0BF3269828FF00196AC0 /* DescriptionView.swift */; };
 		7F2E0BF62698291A00196AC0 /* DescriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E0BF52698291A00196AC0 /* DescriptionViewModel.swift */; };
+		7F2E0BFA2698C20E00196AC0 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E0BF82698C20E00196AC0 /* ImageTableViewCell.swift */; };
+		7F2E0BFB2698C20E00196AC0 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F2E0BF92698C20E00196AC0 /* ImageTableViewCell.xib */; };
 		7F39508E268F938200F714DC /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39508D268F938200F714DC /* Animal.swift */; };
 		7F395090268F93A500F714DC /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39508F268F93A500F714DC /* Video.swift */; };
 		7F395092268F93CD00F714DC /* NationalParkLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F395091268F93CD00F714DC /* NationalParkLocation.swift */; };
@@ -72,6 +74,8 @@
 		7F2E0BEF2697F87300196AC0 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		7F2E0BF3269828FF00196AC0 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 		7F2E0BF52698291A00196AC0 /* DescriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewModel.swift; sourceTree = "<group>"; };
+		7F2E0BF82698C20E00196AC0 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		7F2E0BF92698C20E00196AC0 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
 		7F39508D268F938200F714DC /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		7F39508F268F93A500F714DC /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		7F395091268F93CD00F714DC /* NationalParkLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParkLocation.swift; sourceTree = "<group>"; };
@@ -149,8 +153,18 @@
 				7F2E0BEF2697F87300196AC0 /* DescriptionViewController.swift */,
 				7F2E0BF3269828FF00196AC0 /* DescriptionView.swift */,
 				7F2E0BF52698291A00196AC0 /* DescriptionViewModel.swift */,
+				7F2E0BF72698C1F400196AC0 /* Image */,
 			);
 			path = Description;
+			sourceTree = "<group>";
+		};
+		7F2E0BF72698C1F400196AC0 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				7F2E0BF82698C20E00196AC0 /* ImageTableViewCell.swift */,
+				7F2E0BF92698C20E00196AC0 /* ImageTableViewCell.xib */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		7F39508C268F937000F714DC /* Models */ = {
@@ -472,6 +486,7 @@
 				7F62BF4F268EF5D000115596 /* zebra.mp4 in Resources */,
 				7F62BF56268EF5D000115596 /* giraffe.mp4 in Resources */,
 				7FCAD05A2692F72700A39C1B /* HeaderCollectionReusableView.xib in Resources */,
+				7F2E0BFB2698C20E00196AC0 /* ImageTableViewCell.xib in Resources */,
 				7F7759A426920DEF0012BC25 /* BannerCollectionViewCell.xib in Resources */,
 				7F62BF2E268EEDA700115596 /* Main.storyboard in Resources */,
 			);
@@ -490,6 +505,7 @@
 				7F2E0BF4269828FF00196AC0 /* DescriptionView.swift in Sources */,
 				7F7759722691C3E10012BC25 /* HomeTabView.swift in Sources */,
 				7F78BE8C269054AC000DD505 /* TabBarController.swift in Sources */,
+				7F2E0BFA2698C20E00196AC0 /* ImageTableViewCell.swift in Sources */,
 				7F395097268F943A00F714DC /* Bundle+Extension.swift in Sources */,
 				7F39509E268F9A5600F714DC /* NavBarView.swift in Sources */,
 				7F39508E268F938200F714DC /* Animal.swift in Sources */,

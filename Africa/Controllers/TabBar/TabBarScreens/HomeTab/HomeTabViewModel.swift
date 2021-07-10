@@ -49,7 +49,6 @@ class HomeTabViewModel: BaseViewModel {
     func rightButtonTapped() {
         if gridView == false {
             gridView = true
-            delegate?.updateUI()
         }else {
             let currentGrid = gridType.rawValue
             if (currentGrid + 1) <= 3 {
@@ -57,9 +56,8 @@ class HomeTabViewModel: BaseViewModel {
             }else {
                 gridType = .list
             }
-            
-            delegate?.updateUI()
         }
+        delegate?.updateUI()
     }
     
     func imageTapped(dataSource: ImageCollectionViewCellDataSource?) {

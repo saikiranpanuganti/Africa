@@ -16,7 +16,15 @@ class DescriptionViewModel: BaseViewModel {
     
     var animal: Animal?
     
+    func getData() {
+        delegate?.updateUI()
+    }
+    
     func backTapped() {
         delegate?.popTheController()
     }
+}
+
+extension DescriptionViewModel: DescriptionViewDataSource {
+    
 }

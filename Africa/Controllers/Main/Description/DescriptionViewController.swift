@@ -18,6 +18,7 @@ class DescriptionViewController: BaseViewController {
         descriptionView.delegate = self
         viewModel.delegate = self
         descriptionView.setUpUI()
+        viewModel.getData()
     }
 
 }
@@ -26,14 +27,11 @@ extension DescriptionViewController: DescriptionViewDelegate {
     func backTapped() {
         viewModel.backTapped()
     }
-    
-    
 }
 
 extension DescriptionViewController: DescriptionViewModelDelegate {
     func updateUI() {
-        
+        descriptionView.dataSource = viewModel
+        descriptionView.updateUI()
     }
-    
-    
 }
