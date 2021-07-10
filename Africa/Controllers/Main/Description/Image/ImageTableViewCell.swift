@@ -20,7 +20,7 @@ class ImageTableViewCell: UITableViewCell {
     @IBOutlet weak var cellImage: UIImageView!
     
     var dataSouce: ImageTableViewCellDataSource?
-    var delegate: ImageTableViewCellDelegate?
+    weak var delegate: ImageTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()

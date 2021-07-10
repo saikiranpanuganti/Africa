@@ -51,3 +51,39 @@ extension Banner: BannerCollectionViewCellDataSource {
 extension Animal: ImageTableViewCellDataSource {
     
 }
+
+extension Animal: LabelWithUnderlineTableViewCellDataSource {
+    var lineColor: UIColor {
+        return Colors.shared.orangeAppColor
+    }
+}
+
+extension Animal: LabelTableViewCellDataSource {
+    var text: String? {
+        return headline
+    }
+    var textAlignment: NSTextAlignment {
+        return .left
+    }
+    var textColor: UIColor {
+        return Colors.shared.orangeAppColor
+    }
+    var font: UIFont{
+        return Fonts.shared.medium3
+    }
+}
+
+extension Animal: LabelWithImageTableViewCellDataSource {
+    var cellText: String? {
+        return Strings.shared.wildernessInPictures
+    }
+    var cellImage: UIImage? {
+        return UIImage(systemName: "photo.on.rectangle.angled")
+    }
+    var imageTintColor: UIColor {
+        return Colors.shared.orangeAppColor
+    }
+    var cellFont: UIFont {
+        return Fonts.shared.medium4
+    }
+}

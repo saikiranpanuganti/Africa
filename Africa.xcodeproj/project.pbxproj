@@ -12,6 +12,12 @@
 		7F2E0BF62698291A00196AC0 /* DescriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E0BF52698291A00196AC0 /* DescriptionViewModel.swift */; };
 		7F2E0BFA2698C20E00196AC0 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E0BF82698C20E00196AC0 /* ImageTableViewCell.swift */; };
 		7F2E0BFB2698C20E00196AC0 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F2E0BF92698C20E00196AC0 /* ImageTableViewCell.xib */; };
+		7F33268926997FD4000A5375 /* LabelWithUnderlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33268726997FD4000A5375 /* LabelWithUnderlineTableViewCell.swift */; };
+		7F33268A26997FD4000A5375 /* LabelWithUnderlineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F33268826997FD4000A5375 /* LabelWithUnderlineTableViewCell.xib */; };
+		7F3326C5269A0DAD000A5375 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3326C3269A0DAD000A5375 /* LabelTableViewCell.swift */; };
+		7F3326C6269A0DAD000A5375 /* LabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3326C4269A0DAD000A5375 /* LabelTableViewCell.xib */; };
+		7F3326CA269A12CA000A5375 /* LabelWithImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3326C8269A12CA000A5375 /* LabelWithImageTableViewCell.swift */; };
+		7F3326CB269A12CA000A5375 /* LabelWithImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3326C9269A12CA000A5375 /* LabelWithImageTableViewCell.xib */; };
 		7F39508E268F938200F714DC /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39508D268F938200F714DC /* Animal.swift */; };
 		7F395090268F93A500F714DC /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39508F268F93A500F714DC /* Video.swift */; };
 		7F395092268F93CD00F714DC /* NationalParkLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F395091268F93CD00F714DC /* NationalParkLocation.swift */; };
@@ -76,6 +82,12 @@
 		7F2E0BF52698291A00196AC0 /* DescriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewModel.swift; sourceTree = "<group>"; };
 		7F2E0BF82698C20E00196AC0 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		7F2E0BF92698C20E00196AC0 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		7F33268726997FD4000A5375 /* LabelWithUnderlineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithUnderlineTableViewCell.swift; sourceTree = "<group>"; };
+		7F33268826997FD4000A5375 /* LabelWithUnderlineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelWithUnderlineTableViewCell.xib; sourceTree = "<group>"; };
+		7F3326C3269A0DAD000A5375 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
+		7F3326C4269A0DAD000A5375 /* LabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelTableViewCell.xib; sourceTree = "<group>"; };
+		7F3326C8269A12CA000A5375 /* LabelWithImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithImageTableViewCell.swift; sourceTree = "<group>"; };
+		7F3326C9269A12CA000A5375 /* LabelWithImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelWithImageTableViewCell.xib; sourceTree = "<group>"; };
 		7F39508D268F938200F714DC /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		7F39508F268F93A500F714DC /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		7F395091268F93CD00F714DC /* NationalParkLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParkLocation.swift; sourceTree = "<group>"; };
@@ -153,6 +165,9 @@
 				7F2E0BEF2697F87300196AC0 /* DescriptionViewController.swift */,
 				7F2E0BF3269828FF00196AC0 /* DescriptionView.swift */,
 				7F2E0BF52698291A00196AC0 /* DescriptionViewModel.swift */,
+				7F3326C7269A12B2000A5375 /* LabelWithImage */,
+				7F3326C2269A0D99000A5375 /* Label */,
+				7F33268626997ECF000A5375 /* LabelWithUnderline */,
 				7F2E0BF72698C1F400196AC0 /* Image */,
 			);
 			path = Description;
@@ -165,6 +180,33 @@
 				7F2E0BF92698C20E00196AC0 /* ImageTableViewCell.xib */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		7F33268626997ECF000A5375 /* LabelWithUnderline */ = {
+			isa = PBXGroup;
+			children = (
+				7F33268726997FD4000A5375 /* LabelWithUnderlineTableViewCell.swift */,
+				7F33268826997FD4000A5375 /* LabelWithUnderlineTableViewCell.xib */,
+			);
+			path = LabelWithUnderline;
+			sourceTree = "<group>";
+		};
+		7F3326C2269A0D99000A5375 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				7F3326C3269A0DAD000A5375 /* LabelTableViewCell.swift */,
+				7F3326C4269A0DAD000A5375 /* LabelTableViewCell.xib */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		7F3326C7269A12B2000A5375 /* LabelWithImage */ = {
+			isa = PBXGroup;
+			children = (
+				7F3326C8269A12CA000A5375 /* LabelWithImageTableViewCell.swift */,
+				7F3326C9269A12CA000A5375 /* LabelWithImageTableViewCell.xib */,
+			);
+			path = LabelWithImage;
 			sourceTree = "<group>";
 		};
 		7F39508C268F937000F714DC /* Models */ = {
@@ -468,7 +510,9 @@
 				7F77599F269201D40012BC25 /* CopyrightCollectionViewCell.xib in Resources */,
 				7F62BF40268EF58700115596 /* covers.json in Resources */,
 				7F7759AA2692128A0012BC25 /* ImageCollectionViewCell.xib in Resources */,
+				7F33268A26997FD4000A5375 /* LabelWithUnderlineTableViewCell.xib in Resources */,
 				7F62BF57268EF5D000115596 /* gorilla.mp4 in Resources */,
+				7F3326CB269A12CA000A5375 /* LabelWithImageTableViewCell.xib in Resources */,
 				7F62BF52268EF5D000115596 /* lion.mp4 in Resources */,
 				7F7759982691E7560012BC25 /* AnimalDetailsCollectionViewCell.xib in Resources */,
 				7F62BF51268EF5D000115596 /* lioness.mp4 in Resources */,
@@ -482,6 +526,7 @@
 				7F62BF3F268EF58700115596 /* locations.json in Resources */,
 				7F62BF55268EF5D000115596 /* hippo.mp4 in Resources */,
 				7F62BF50268EF5D000115596 /* cheetah.mp4 in Resources */,
+				7F3326C6269A0DAD000A5375 /* LabelTableViewCell.xib in Resources */,
 				7F62BF4E268EF5D000115596 /* ostrich.mp4 in Resources */,
 				7F62BF4F268EF5D000115596 /* zebra.mp4 in Resources */,
 				7F62BF56268EF5D000115596 /* giraffe.mp4 in Resources */,
@@ -508,6 +553,7 @@
 				7F2E0BFA2698C20E00196AC0 /* ImageTableViewCell.swift in Sources */,
 				7F395097268F943A00F714DC /* Bundle+Extension.swift in Sources */,
 				7F39509E268F9A5600F714DC /* NavBarView.swift in Sources */,
+				7F33268926997FD4000A5375 /* LabelWithUnderlineTableViewCell.swift in Sources */,
 				7F39508E268F938200F714DC /* Animal.swift in Sources */,
 				7F2E0BF02697F87300196AC0 /* DescriptionViewController.swift in Sources */,
 				7F78BE81269024AE000DD505 /* HomeTabViewController.swift in Sources */,
@@ -521,6 +567,7 @@
 				7F62BF59268F18E600115596 /* BaseViewController.swift in Sources */,
 				7F62BF6E268F1B2F00115596 /* Config.swift in Sources */,
 				7F62BF27268EEDA700115596 /* AppDelegate.swift in Sources */,
+				7F3326C5269A0DAD000A5375 /* LabelTableViewCell.swift in Sources */,
 				7FCAD0592692F72700A39C1B /* HeaderCollectionReusableView.swift in Sources */,
 				7F7759A326920DEF0012BC25 /* BannerCollectionViewCell.swift in Sources */,
 				7F77599E269201D40012BC25 /* CopyrightCollectionViewCell.swift in Sources */,
@@ -531,6 +578,7 @@
 				7F62BF75268F1B3B00115596 /* Images.swift in Sources */,
 				7F395092268F93CD00F714DC /* NationalParkLocation.swift in Sources */,
 				7F78BE7C269021CB000DD505 /* HomeTabNavigationController.swift in Sources */,
+				7F3326CA269A12CA000A5375 /* LabelWithImageTableViewCell.swift in Sources */,
 				7F62BF29268EEDA700115596 /* SceneDelegate.swift in Sources */,
 				7F2E0BF62698291A00196AC0 /* DescriptionViewModel.swift in Sources */,
 				7F62BF81268F207700115596 /* SplashView.swift in Sources */,

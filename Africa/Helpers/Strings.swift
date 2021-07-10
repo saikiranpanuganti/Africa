@@ -21,4 +21,5 @@ class Strings {
     let copyrights = "Copyright © SaiKiran Panuganti"
     let rightsReserved = "All right reserved"
     let betterApps = "Better Apps ♡ Less Code"
+    let wildernessInPictures = "Wilderness in Pictures"
 }
