@@ -22,4 +22,8 @@ class Strings {
     let rightsReserved = "All right reserved"
     let betterApps = "Better Apps ♡ Less Code"
     let wildernessInPictures = "Wilderness in Pictures"
+    let didYouKnow = "Did you know?"
+    let allAbout = "All about "
+    let learnMore = "Learn More"
+    let wikipedia = "Wikipedia"
 }

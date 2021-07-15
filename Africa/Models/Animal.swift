@@ -25,6 +25,52 @@ struct Banner {
     let banners: [Animal]
 }
 
+struct Wilderness {
+    let gallery: [Gallery]
+}
+
+struct Gallery {
+    let galleryImage: String
+}
+
+extension Wilderness: CollectionTableViewCellDataSource {
+    var images: [ImageCollectionViewCellDataSource] {
+        return gallery
+    }
+}
+
+extension Gallery: ImageCollectionViewCellDataSource {
+    var coverImage: String? {
+        galleryImage
+    }
+    var image: String {
+        return ""
+    }
+    var cornerRadius: CGFloat? {
+        return 10.0
+    }
+}
+
+struct Quotes {
+    let quotes: [Quote]
+}
+
+struct Quote {
+    let quoteString: String
+}
+
+extension Quotes: QuotesTableViewCellDataSource {
+    var quoteArray: [LabelCollectionViewCellDataSource] {
+        return quotes
+    }
+}
+
+extension Quote: LabelCollectionViewCellDataSource {
+    var text: String? {
+        return quoteString
+    }
+}
+
 extension Animal: AnimalDetailsCollectionViewCellDataSource {
     var title: String {
         return name
@@ -72,7 +118,6 @@ extension Animal: LabelTableViewCellDataSource {
         return Fonts.shared.medium3
     }
 }
-
 extension Animal: LabelWithImageTableViewCellDataSource {
     var cellText: String? {
         return Strings.shared.wildernessInPictures
@@ -86,4 +131,46 @@ extension Animal: LabelWithImageTableViewCellDataSource {
     var cellFont: UIFont {
         return Fonts.shared.medium4
     }
+}
+
+struct DidYouknow {
+    let cellImage: UIImage? = UIImage(systemName: "questionmark.circle")
+    let cellText: String? = Strings.shared.didYouKnow
+    var imageTintColor: UIColor = Colors.shared.orangeAppColor
+    var cellFont: UIFont = Fonts.shared.medium4
+}
+extension DidYouknow: LabelWithImageTableViewCellDataSource {
+    
+}
+
+struct AllAbout {
+    let cellImage: UIImage? = UIImage(systemName: "info.circle")
+    var cellText: String? = ""
+    var imageTintColor: UIColor = Colors.shared.orangeAppColor
+    var cellFont: UIFont = Fonts.shared.medium4
+}
+extension AllAbout: LabelWithImageTableViewCellDataSource {
+    
+}
+
+struct AnimalDescription {
+    var description: String?
+}
+extension AnimalDescription: LabelTableViewCellDataSource {
+    var text: String? {
+        return description
+    }
+    var textAlignment: NSTextAlignment {
+        return .left
+    }
+}
+
+struct LearnMore {
+    let cellImage: UIImage? = UIImage(systemName: "books.vertical")
+    let cellText: String? = Strings.shared.learnMore
+    var imageTintColor: UIColor = Colors.shared.orangeAppColor
+    var cellFont: UIFont = Fonts.shared.medium4
+}
+extension LearnMore: LabelWithImageTableViewCellDataSource {
+    
 }

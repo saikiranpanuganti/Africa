@@ -39,7 +39,7 @@ class LabelTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        contentView.backgroundColor = Colors.shared.whiteBlackBackground
     }
     
     func configureUI() {
