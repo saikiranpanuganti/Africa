@@ -27,6 +27,9 @@ extension DescriptionViewController: DescriptionViewDelegate {
     func backTapped() {
         viewModel.backTapped()
     }
+    func animalWikiTapped(link: String?) {
+        viewModel.animalWikiTapped(link: link)
+    }
 }
 
 extension DescriptionViewController: DescriptionViewModelDelegate {

@@ -7,6 +7,7 @@
 
 protocol DescriptionViewDelegate: AnyObject {
     func backTapped()
+    func animalWikiTapped(link: String?)
 }
 
 protocol DescriptionViewDataSource: AnyObject {
@@ -17,6 +18,7 @@ protocol DescriptionViewDataSource: AnyObject {
     var allAbout: AllAbout? {get}
     var animalDescription: AnimalDescription? {get}
     var learnMore: LearnMore {get}
+    var animalWiki: AnimalWiki? {get}
 }
 
 import UIKit
@@ -49,6 +51,7 @@ class DescriptionView: UIView {
         descripitionTableView.register(UINib(nibName: "LabelWithImageTableViewCell", bundle: nil), forCellReuseIdentifier: "LabelWithImageTableViewCell")
         descripitionTableView.register(UINib(nibName: "CollectionTableViewCell", bundle: nil), forCellReuseIdentifier: "CollectionTableViewCell")
         descripitionTableView.register(UINib(nibName: "QuotesTableViewCell", bundle: nil), forCellReuseIdentifier: "QuotesTableViewCell")
+        descripitionTableView.register(UINib(nibName: "LearnMoreTableViewCell", bundle: nil), forCellReuseIdentifier: "LearnMoreTableViewCell")
     }
     func updateUI() {
         navBarView.title = dataSource?.animal?.name ?? ""
@@ -59,7 +62,7 @@ class DescriptionView: UIView {
 
 extension DescriptionView: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 6
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -96,8 +99,9 @@ extension DescriptionView: UITableViewDataSource {
                 return cell
             }
         }else if indexPath.section == 5 {
-            if let cell = descripitionTableView.dequeueReusableCell(withIdentifier: "LabelTableViewCell", for: indexPath) as? LabelTableViewCell {
-                cell.dataSource = dataSource?.animalDescription
+            if let cell = descripitionTableView.dequeueReusableCell(withIdentifier: "LearnMoreTableViewCell", for: indexPath) as? LearnMoreTableViewCell {
+                cell.delegate = self
+                cell.dataSource = dataSource?.animalWiki
                 cell.configureUI()
                 return cell
             }
@@ -166,5 +170,11 @@ extension DescriptionView: UITableViewDelegate {
 extension DescriptionView: NavBarViewDelegate {
     func backButtonTapped() {
         delegate?.backTapped()
+    }
+}
+
+extension DescriptionView: LearnMoreTableViewCellDelegate {
+    func animalWikiTapped(link: String?) {
+        delegate?.animalWikiTapped(link: link)
     }
 }

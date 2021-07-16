@@ -174,3 +174,12 @@ struct LearnMore {
 extension LearnMore: LabelWithImageTableViewCellDataSource {
     
 }
+
+struct AnimalWiki {
+    var animal: String?
+    var link: String?
+}
+
+extension AnimalWiki: LearnMoreTableViewCellDataSource {
+    
+}

@@ -5,7 +5,7 @@
 //  Created by SaiKiran Panuganti on 09/07/21.
 //
 
-import Foundation
+import UIKit
 
 protocol DescriptionViewModelDelegate: BaseViewModelDelegate {
     
@@ -21,6 +21,7 @@ class DescriptionViewModel: BaseViewModel {
     var allAbout: AllAbout? = AllAbout()
     var animalDescription: AnimalDescription?
     var learnMore: LearnMore = LearnMore()
+    var animalWiki: AnimalWiki?
     
     func getData() {
         var galleryArray: [Gallery] = []
@@ -41,9 +42,16 @@ class DescriptionViewModel: BaseViewModel {
         
         animalDescription = AnimalDescription(description: animal?.description)
         
+        animalWiki = AnimalWiki(animal: animal?.name, link: animal?.link)
+        
         delegate?.updateUI()
     }
     
+    func animalWikiTapped(link: String?){
+        if let link = link, let url = URL(string: link) {
+            UIApplication.shared.open(url)
+        }
+    }
     func backTapped() {
         delegate?.popTheController()
     }
