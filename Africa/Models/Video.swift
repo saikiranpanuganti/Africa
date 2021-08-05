@@ -17,3 +17,15 @@ struct Video: Codable {
     "video-\(id)"
   }
 }
+
+extension Video: VideoDetailsCollectionViewCellDataSource {
+    var title: String {
+        return name
+    }
+    var image: String {
+        return thumbnail
+    }
+    var subTitle: String {
+        return headline
+    }
+}

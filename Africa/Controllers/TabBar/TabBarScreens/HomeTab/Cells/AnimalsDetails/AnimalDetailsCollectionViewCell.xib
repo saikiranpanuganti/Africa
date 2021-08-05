@@ -47,6 +47,7 @@
                                     <constraint firstAttribute="width" constant="15" id="NdX-yn-0UL"/>
                                     <constraint firstAttribute="width" secondItem="F2w-02-R9F" secondAttribute="height" multiplier="1:1" id="aHq-6f-ZqM"/>
                                 </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="regular"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIq-iw-lJo">
                                 <rect key="frame" x="20" y="155.5" width="423" height="0.5"/>

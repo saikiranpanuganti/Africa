@@ -19,9 +19,10 @@ class Colors {
     var blackWhiteBackground = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) //rgba(0, 0, 0, 1)
     var orangeAppColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1) //rgba(255, 175, 0, 1)
     var tabBarBackrgound = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.9) //rgba(0, 0, 0, 0.90)
-    var greyTintColor = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 1) //rgba(70, 70, 74, 0)
+    var greyTintColor = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 0.5) //rgba(70, 70, 74, 0.5)
     var copyrights = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 1) //rgba(70, 70, 74, 0)
     var quotes = #colorLiteral(red: 0.1098039216, green: 0.1098039216, blue: 0.1176470588, alpha: 1) //rgba(28, 28, 30, 0)
+    var videoBackground = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.9) //rgba(255, 255, 255, 0.9)
     
     var menuTopGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.7) //rgba(0, 0, 0, 0.7)
     var menuBottomGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.3) //rgba(0, 0, 0, 0.3)
@@ -47,6 +48,7 @@ class Colors {
             greyTintColor = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 1) //rgba(70, 70, 74, 0)
             copyrights = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 1) //rgba(70, 70, 74, 0)
             quotes = #colorLiteral(red: 0.1098039216, green: 0.1098039216, blue: 0.1176470588, alpha: 1) //rgba(28, 28, 30, 0)
+            videoBackground = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.9) //rgba(0, 0, 0, 0.9)
             
             menuTopGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.7) //rgba(0, 0, 0, 0.7)
             menuBottomGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.3) //rgba(0, 0, 0, 0.3)
@@ -66,9 +68,10 @@ class Colors {
             blackWhiteBackground = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) //rgba(0, 0, 0, 1)
             orangeAppColor = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 1) //rgba(255, 175, 0, 1)
             tabBarBackrgound = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.9) //rgba(0, 0, 0, 0.9)
-            greyTintColor = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 1) //rgba(70, 70, 74, 0)
+            greyTintColor = #colorLiteral(red: 0.2745098039, green: 0.2745098039, blue: 0.2901960784, alpha: 0.5) //rgba(70, 70, 74, 0.5)
             copyrights = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) //rgba(0, 0, 0, 1)
             quotes = #colorLiteral(red: 0.1098039216, green: 0.1098039216, blue: 0.1176470588, alpha: 1) //rgba(28, 28, 30, 0)
+            videoBackground = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.9) //rgba(255, 255, 255, 0.9)
             
             menuTopGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.7) //rgba(0, 0, 0, 0.7)
             menuBottomGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.3) //rgba(0, 0, 0, 0.3)

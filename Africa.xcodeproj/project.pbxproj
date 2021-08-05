@@ -79,9 +79,14 @@
 		7F78BE7E2690240C000DD505 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE7D2690240C000DD505 /* Storyboard.swift */; };
 		7F78BE81269024AE000DD505 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE80269024AE000DD505 /* HomeTabViewController.swift */; };
 		7F78BE8C269054AC000DD505 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE8B269054AC000DD505 /* TabBarController.swift */; };
+		7FAE20B026BBD00500C36751 /* VideoDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE20AE26BBD00500C36751 /* VideoDetailsCollectionViewCell.swift */; };
+		7FAE20B126BBD00500C36751 /* VideoDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE20AF26BBD00500C36751 /* VideoDetailsCollectionViewCell.xib */; };
 		7FCAD0552692EA6900A39C1B /* GridType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCAD0542692EA6900A39C1B /* GridType.swift */; };
 		7FCAD0592692F72700A39C1B /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCAD0572692F72700A39C1B /* HeaderCollectionReusableView.swift */; };
 		7FCAD05A2692F72700A39C1B /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FCAD0582692F72700A39C1B /* HeaderCollectionReusableView.xib */; };
+		7FE8324026A1A25C0097BABD /* WatchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE8323F26A1A25C0097BABD /* WatchTabViewController.swift */; };
+		7FE8324226A1A2690097BABD /* WatchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE8324126A1A2690097BABD /* WatchTabView.swift */; };
+		7FE8324426A1A2720097BABD /* WatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE8324326A1A2720097BABD /* WatchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,9 +164,14 @@
 		7F78BE7D2690240C000DD505 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		7F78BE80269024AE000DD505 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		7F78BE8B269054AC000DD505 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		7FAE20AE26BBD00500C36751 /* VideoDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7FAE20AF26BBD00500C36751 /* VideoDetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoDetailsCollectionViewCell.xib; sourceTree = "<group>"; };
 		7FCAD0542692EA6900A39C1B /* GridType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridType.swift; sourceTree = "<group>"; };
 		7FCAD0572692F72700A39C1B /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		7FCAD0582692F72700A39C1B /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		7FE8323F26A1A25C0097BABD /* WatchTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTabViewController.swift; sourceTree = "<group>"; };
+		7FE8324126A1A2690097BABD /* WatchTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTabView.swift; sourceTree = "<group>"; };
+		7FE8324326A1A2720097BABD /* WatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				7F78BE7B269021CB000DD505 /* HomeTabNavigationController.swift */,
+				7FE8323E26A1A2490097BABD /* WatchTab */,
 				7F78BE7F2690249B000DD505 /* HomeTab */,
 			);
 			path = TabBarScreens;
@@ -497,6 +508,15 @@
 			path = HomeTab;
 			sourceTree = "<group>";
 		};
+		7FAE20AD26BBCFEB00C36751 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7FAE20AE26BBD00500C36751 /* VideoDetailsCollectionViewCell.swift */,
+				7FAE20AF26BBD00500C36751 /* VideoDetailsCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		7FCAD0562692F70600A39C1B /* SpacerHeader */ = {
 			isa = PBXGroup;
 			children = (
@@ -504,6 +524,17 @@
 				7FCAD0582692F72700A39C1B /* HeaderCollectionReusableView.xib */,
 			);
 			path = SpacerHeader;
+			sourceTree = "<group>";
+		};
+		7FE8323E26A1A2490097BABD /* WatchTab */ = {
+			isa = PBXGroup;
+			children = (
+				7FE8323F26A1A25C0097BABD /* WatchTabViewController.swift */,
+				7FE8324126A1A2690097BABD /* WatchTabView.swift */,
+				7FE8324326A1A2720097BABD /* WatchViewModel.swift */,
+				7FAE20AD26BBCFEB00C36751 /* Cells */,
+			);
+			path = WatchTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -582,6 +613,7 @@
 				7F62BF53268EF5D000115596 /* rhino.mp4 in Resources */,
 				7F39509A268F99DE00F714DC /* TabBar.storyboard in Resources */,
 				7F62BF3F268EF58700115596 /* locations.json in Resources */,
+				7FAE20B126BBD00500C36751 /* VideoDetailsCollectionViewCell.xib in Resources */,
 				7F62BF55268EF5D000115596 /* hippo.mp4 in Resources */,
 				7F62BF50268EF5D000115596 /* cheetah.mp4 in Resources */,
 				7F3326C6269A0DAD000A5375 /* LabelTableViewCell.xib in Resources */,
@@ -624,6 +656,7 @@
 				7F62BF6C268F1B2F00115596 /* Constants.swift in Sources */,
 				7F62BF66268F1B1F00115596 /* Colors.swift in Sources */,
 				7F1E8FA8269B5595002EC961 /* LearnMoreTableViewCell.swift in Sources */,
+				7FE8324426A1A2720097BABD /* WatchViewModel.swift in Sources */,
 				7F7759702691C3D70012BC25 /* HomeTabViewModel.swift in Sources */,
 				7F62BF7A268F1D1400115596 /* SplashViewController.swift in Sources */,
 				7F62BF6D268F1B2F00115596 /* Fonts.swift in Sources */,
@@ -638,8 +671,10 @@
 				7F62BF6B268F1B2F00115596 /* CustomError.swift in Sources */,
 				7F62BF62268F1AD600115596 /* BaseViewModel.swift in Sources */,
 				7F62BF76268F1B3B00115596 /* Strings.swift in Sources */,
+				7FAE20B026BBD00500C36751 /* VideoDetailsCollectionViewCell.swift in Sources */,
 				7F395090268F93A500F714DC /* Video.swift in Sources */,
 				7F62BF75268F1B3B00115596 /* Images.swift in Sources */,
+				7FE8324026A1A25C0097BABD /* WatchTabViewController.swift in Sources */,
 				7F395092268F93CD00F714DC /* NationalParkLocation.swift in Sources */,
 				7F78BE7C269021CB000DD505 /* HomeTabNavigationController.swift in Sources */,
 				7F3326CA269A12CA000A5375 /* LabelWithImageTableViewCell.swift in Sources */,
@@ -647,6 +682,7 @@
 				7F2E0BF62698291A00196AC0 /* DescriptionViewModel.swift in Sources */,
 				7F62BF81268F207700115596 /* SplashView.swift in Sources */,
 				7FCAD0552692EA6900A39C1B /* GridType.swift in Sources */,
+				7FE8324226A1A2690097BABD /* WatchTabView.swift in Sources */,
 				7F62BF78268F1B5A00115596 /* View+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

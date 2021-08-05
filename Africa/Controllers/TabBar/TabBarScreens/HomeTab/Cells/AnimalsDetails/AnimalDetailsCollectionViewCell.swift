@@ -49,13 +49,13 @@ class AnimalDetailsCollectionViewCell: UICollectionViewCell {
         separator.backgroundColor = Colors.shared.greyTintColor
     }
     
-    func configureUI() {
+    private func configureUI() {
         imageView.image = UIImage.init(named: dataSource?.image ?? "")
         title.text = dataSource?.title ?? ""
         subTitle.text = dataSource?.subTitle ?? ""
     }
     
-    @IBAction func animalDetailsTapped(sender: UIButton) {
+    @IBAction private func animalDetailsTapped(sender: UIButton) {
         delegate?.animalDetailsTapped(dataSource: dataSource)
     }
 }

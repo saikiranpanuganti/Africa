@@ -22,6 +22,8 @@ class Images {
     var squareGrid2x2 = UIImage(systemName: "square.grid.2x2")
     var squareGrid3x2 = UIImage(systemName: "square.grid.3x2")
     var rectangleGrid1x2 = UIImage(systemName: "rectangle.grid.1x2")
+    var shuffle = UIImage(systemName: "arrow.2.squarepath")
+    var playCircle = UIImage(systemName: "play.circle")
     
     func updateImages(theme: UIUserInterfaceStyle) {
         switch theme {
@@ -34,6 +36,8 @@ class Images {
             squareGrid2x2 = UIImage(systemName: "square.grid.2x2")
             squareGrid3x2 = UIImage(systemName: "square.grid.3x2")
             rectangleGrid1x2 = UIImage(systemName: "rectangle.grid.1x2")
+            shuffle = UIImage(systemName: "arrow.2.squarepath")
+            playCircle = UIImage(systemName: "play.circle")
         default:
             compass = UIImage(named: "compass")?.withTintColor(UIColor.black, renderingMode: .alwaysOriginal)
             copyrightCompass = UIImage(named: "compass")
@@ -43,6 +47,8 @@ class Images {
             squareGrid2x2 = UIImage(systemName: "square.grid.2x2")
             squareGrid3x2 = UIImage(systemName: "square.grid.3x2")
             rectangleGrid1x2 = UIImage(systemName: "rectangle.grid.1x2")
+            shuffle = UIImage(systemName: "arrow.2.squarepath")
+            playCircle = UIImage(systemName: "play.circle")
         }
     }
 }
