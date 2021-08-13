@@ -54,6 +54,7 @@ extension WatchTabView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoDetailsCollectionViewCell", for: indexPath) as? VideoDetailsCollectionViewCell {
             cell.dataSource = dataSource?.videos[indexPath.row]
+            cell.delegate = self
             
             if indexPath.row == (dataSource?.videos.count ?? 1) - 1 {
                 cell.hideSeparator = true

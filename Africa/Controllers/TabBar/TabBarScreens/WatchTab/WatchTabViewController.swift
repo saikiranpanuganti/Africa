@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVKit
 
 class WatchTabViewController: BaseViewController {
     @IBOutlet weak var watchTabView: WatchTabView!
@@ -30,7 +31,17 @@ extension WatchTabViewController: WatchTabViewDelegate {
         viewModel.shuffleTapped()
     }
     func videoTapped(dataSource: VideoDetailsCollectionViewCellDataSource?) {
-        viewModel.videoTapped(dataSource: dataSource)
+        if let video = dataSource as? Video {
+            let path = Bundle.main.path(forResource: video.id, ofType: "mp4")
+            let url = URL(fileURLWithPath: path ?? "")
+            let player = AVPlayer(url: url)
+            let vc = AVPlayerViewController()
+            vc.player = player
+
+            present(vc, animated: true) {
+                vc.player?.play()
+            }
+        }
     }
 }
 

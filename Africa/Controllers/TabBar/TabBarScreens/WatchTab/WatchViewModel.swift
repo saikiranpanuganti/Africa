@@ -30,11 +30,8 @@ class WatchTabViewModel: BaseViewModel {
     }
     
     func shuffleTapped() {
-        print("shuffleTapped")
-    }
-    
-    func videoTapped(dataSource: VideoDetailsCollectionViewCellDataSource?) {
-        print(dataSource?.title ?? "No title")
+        videos.shuffle()
+        delegate?.updateUI()
     }
 }
 
