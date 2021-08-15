@@ -82,6 +82,13 @@
 		7F7C298126C817FD0072F2EB /* AnimalDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C298026C817FD0072F2EB /* AnimalDescriptionViewController.swift */; };
 		7F7C298326C818C50072F2EB /* AnimalDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C298226C818C50072F2EB /* AnimalDescriptionView.swift */; };
 		7F7C298526C818D00072F2EB /* AnimalDescriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C298426C818D00072F2EB /* AnimalDescriptionViewModel.swift */; };
+		7F7C298826C8D2C60072F2EB /* GalleryTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C298726C8D2C60072F2EB /* GalleryTabViewController.swift */; };
+		7F7C298A26C8D2D90072F2EB /* GalleryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C298926C8D2D90072F2EB /* GalleryTabView.swift */; };
+		7F7C298C26C8D2F30072F2EB /* GalleryTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C298B26C8D2F30072F2EB /* GalleryTabViewModel.swift */; };
+		7F7C299026C8DCF40072F2EB /* GalleryImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C298E26C8DCF40072F2EB /* GalleryImageCollectionViewCell.swift */; };
+		7F7C299126C8DCF40072F2EB /* GalleryImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7C298F26C8DCF40072F2EB /* GalleryImageCollectionViewCell.xib */; };
+		7F7C299526C8F2F10072F2EB /* GallerySliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C299326C8F2F10072F2EB /* GallerySliderCollectionViewCell.swift */; };
+		7F7C299626C8F2F10072F2EB /* GallerySliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7C299426C8F2F10072F2EB /* GallerySliderCollectionViewCell.xib */; };
 		7FAE20B026BBD00500C36751 /* VideoDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE20AE26BBD00500C36751 /* VideoDetailsCollectionViewCell.swift */; };
 		7FAE20B126BBD00500C36751 /* VideoDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE20AF26BBD00500C36751 /* VideoDetailsCollectionViewCell.xib */; };
 		7FCAD0552692EA6900A39C1B /* GridType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCAD0542692EA6900A39C1B /* GridType.swift */; };
@@ -170,6 +177,13 @@
 		7F7C298026C817FD0072F2EB /* AnimalDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDescriptionViewController.swift; sourceTree = "<group>"; };
 		7F7C298226C818C50072F2EB /* AnimalDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDescriptionView.swift; sourceTree = "<group>"; };
 		7F7C298426C818D00072F2EB /* AnimalDescriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDescriptionViewModel.swift; sourceTree = "<group>"; };
+		7F7C298726C8D2C60072F2EB /* GalleryTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTabViewController.swift; sourceTree = "<group>"; };
+		7F7C298926C8D2D90072F2EB /* GalleryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTabView.swift; sourceTree = "<group>"; };
+		7F7C298B26C8D2F30072F2EB /* GalleryTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTabViewModel.swift; sourceTree = "<group>"; };
+		7F7C298E26C8DCF40072F2EB /* GalleryImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F7C298F26C8DCF40072F2EB /* GalleryImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		7F7C299326C8F2F10072F2EB /* GallerySliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F7C299426C8F2F10072F2EB /* GallerySliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GallerySliderCollectionViewCell.xib; sourceTree = "<group>"; };
 		7FAE20AE26BBD00500C36751 /* VideoDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		7FAE20AF26BBD00500C36751 /* VideoDetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoDetailsCollectionViewCell.xib; sourceTree = "<group>"; };
 		7FCAD0542692EA6900A39C1B /* GridType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridType.swift; sourceTree = "<group>"; };
@@ -315,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				7F78BE7B269021CB000DD505 /* HomeTabNavigationController.swift */,
+				7F7C298626C8D2850072F2EB /* GalleryTab */,
 				7FE8323E26A1A2490097BABD /* WatchTab */,
 				7F78BE7F2690249B000DD505 /* HomeTab */,
 			);
@@ -525,6 +540,36 @@
 			path = DescriptionWithScrollView;
 			sourceTree = "<group>";
 		};
+		7F7C298626C8D2850072F2EB /* GalleryTab */ = {
+			isa = PBXGroup;
+			children = (
+				7F7C298726C8D2C60072F2EB /* GalleryTabViewController.swift */,
+				7F7C298926C8D2D90072F2EB /* GalleryTabView.swift */,
+				7F7C298B26C8D2F30072F2EB /* GalleryTabViewModel.swift */,
+				7F7C299226C8F2DA0072F2EB /* GallerySlider */,
+				7F7C298D26C8DB4C0072F2EB /* GalleryImage */,
+			);
+			path = GalleryTab;
+			sourceTree = "<group>";
+		};
+		7F7C298D26C8DB4C0072F2EB /* GalleryImage */ = {
+			isa = PBXGroup;
+			children = (
+				7F7C298E26C8DCF40072F2EB /* GalleryImageCollectionViewCell.swift */,
+				7F7C298F26C8DCF40072F2EB /* GalleryImageCollectionViewCell.xib */,
+			);
+			path = GalleryImage;
+			sourceTree = "<group>";
+		};
+		7F7C299226C8F2DA0072F2EB /* GallerySlider */ = {
+			isa = PBXGroup;
+			children = (
+				7F7C299326C8F2F10072F2EB /* GallerySliderCollectionViewCell.swift */,
+				7F7C299426C8F2F10072F2EB /* GallerySliderCollectionViewCell.xib */,
+			);
+			path = GallerySlider;
+			sourceTree = "<group>";
+		};
 		7FAE20AD26BBCFEB00C36751 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -621,6 +666,8 @@
 				7F1E8F9A269AD721002EC961 /* CollectionTableViewCell.xib in Resources */,
 				7F1E8FA3269B0E63002EC961 /* QuotesTableViewCell.xib in Resources */,
 				7F7759982691E7560012BC25 /* AnimalDetailsCollectionViewCell.xib in Resources */,
+				7F7C299626C8F2F10072F2EB /* GallerySliderCollectionViewCell.xib in Resources */,
+				7F7C299126C8DCF40072F2EB /* GalleryImageCollectionViewCell.xib in Resources */,
 				7F62BF51268EF5D000115596 /* lioness.mp4 in Resources */,
 				7F62BF33268EEDA900115596 /* LaunchScreen.storyboard in Resources */,
 				7F62BF54268EF5D000115596 /* elephant.mp4 in Resources */,
@@ -669,7 +716,9 @@
 				7F2E0BF02697F87300196AC0 /* DescriptionViewController.swift in Sources */,
 				7F78BE81269024AE000DD505 /* HomeTabViewController.swift in Sources */,
 				7F78BE7E2690240C000DD505 /* Storyboard.swift in Sources */,
+				7F7C298A26C8D2D90072F2EB /* GalleryTabView.swift in Sources */,
 				7F62BF7F268F1F0F00115596 /* SplashViewModel.swift in Sources */,
+				7F7C299526C8F2F10072F2EB /* GallerySliderCollectionViewCell.swift in Sources */,
 				7F62BF6C268F1B2F00115596 /* Constants.swift in Sources */,
 				7F62BF66268F1B1F00115596 /* Colors.swift in Sources */,
 				7F1E8FA8269B5595002EC961 /* LearnMoreTableViewCell.swift in Sources */,
@@ -684,10 +733,12 @@
 				7F62BF27268EEDA700115596 /* AppDelegate.swift in Sources */,
 				7F7C298126C817FD0072F2EB /* AnimalDescriptionViewController.swift in Sources */,
 				7F3326C5269A0DAD000A5375 /* LabelTableViewCell.swift in Sources */,
+				7F7C298826C8D2C60072F2EB /* GalleryTabViewController.swift in Sources */,
 				7FCAD0592692F72700A39C1B /* HeaderCollectionReusableView.swift in Sources */,
 				7F7759A326920DEF0012BC25 /* BannerCollectionViewCell.swift in Sources */,
 				7F77599E269201D40012BC25 /* CopyrightCollectionViewCell.swift in Sources */,
 				7F62BF6B268F1B2F00115596 /* CustomError.swift in Sources */,
+				7F7C298C26C8D2F30072F2EB /* GalleryTabViewModel.swift in Sources */,
 				7F62BF62268F1AD600115596 /* BaseViewModel.swift in Sources */,
 				7F62BF76268F1B3B00115596 /* Strings.swift in Sources */,
 				7FAE20B026BBD00500C36751 /* VideoDetailsCollectionViewCell.swift in Sources */,
@@ -697,6 +748,7 @@
 				7F395092268F93CD00F714DC /* NationalParkLocation.swift in Sources */,
 				7F78BE7C269021CB000DD505 /* HomeTabNavigationController.swift in Sources */,
 				7F3326CA269A12CA000A5375 /* LabelWithImageTableViewCell.swift in Sources */,
+				7F7C299026C8DCF40072F2EB /* GalleryImageCollectionViewCell.swift in Sources */,
 				7F62BF29268EEDA700115596 /* SceneDelegate.swift in Sources */,
 				7F2E0BF62698291A00196AC0 /* DescriptionViewModel.swift in Sources */,
 				7F62BF81268F207700115596 /* SplashView.swift in Sources */,

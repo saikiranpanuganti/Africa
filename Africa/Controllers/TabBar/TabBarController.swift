@@ -35,7 +35,7 @@ class TabBarController: UITabBarController {
         let mapController = Controller.homeTab.getViewController()
         mapController.tabBarItem = UITabBarItem(title: Strings.shared.locations, image: UIImage(systemName: "map"), selectedImage: UIImage(systemName: "map"))
         
-        let galleryController = Controller.homeTab.getViewController()
+        let galleryController = Controller.galleryTab.getViewController()
         galleryController.tabBarItem = UITabBarItem(title: Strings.shared.gallery, image: UIImage(systemName: "photo"), selectedImage: UIImage(systemName: "photo"))
         
         let controllers = [browseController, watchController, mapController, galleryController]

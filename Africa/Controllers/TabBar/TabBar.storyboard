@@ -115,6 +115,46 @@
             </objects>
             <point key="canvasLocation" x="-1013" y="711"/>
         </scene>
+        <!--Gallery Tab View Controller-->
+        <scene sceneID="KiO-HB-gdb">
+            <objects>
+                <viewController storyboardIdentifier="GalleryTabViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bjX-nH-8dg" customClass="GalleryTabViewController" customModule="Africa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HSh-yE-wrY" customClass="GalleryTabView" customModule="Africa" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FaE-Xa-J2L">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TR0-us-eOk">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xCC-bl-ITx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FaE-Xa-J2L" firstAttribute="top" secondItem="HSh-yE-wrY" secondAttribute="top" id="5bR-Tj-Gv6"/>
+                            <constraint firstItem="xCC-bl-ITx" firstAttribute="trailing" secondItem="FaE-Xa-J2L" secondAttribute="trailing" id="IE9-zy-MqE"/>
+                            <constraint firstAttribute="bottom" secondItem="FaE-Xa-J2L" secondAttribute="bottom" id="SpF-q5-DmR"/>
+                            <constraint firstItem="FaE-Xa-J2L" firstAttribute="leading" secondItem="xCC-bl-ITx" secondAttribute="leading" id="zgW-jI-iNe"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="collectionView" destination="FaE-Xa-J2L" id="6iA-mv-EFR"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="galleryTabView" destination="HSh-yE-wrY" id="sLp-gN-Cmw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uuf-Ln-Scf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-238" y="708"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
