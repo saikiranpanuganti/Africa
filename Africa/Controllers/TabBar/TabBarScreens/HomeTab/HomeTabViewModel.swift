@@ -61,22 +61,36 @@ class HomeTabViewModel: BaseViewModel {
     }
     
     func imageTapped(dataSource: ImageCollectionViewCellDataSource?) {
+//        if let animal = dataSource as? Animal {
+//            if let controller = Controller.description.getViewController() as? DescriptionViewController {
+//                controller.viewModel.animal = animal
+//                delegate?.push(controller)
+//            }
+//        }else if let coverImage = dataSource as? Animal {
+//            if let controller = Controller.description.getViewController() as? DescriptionViewController {
+//                controller.viewModel.animal = coverImage
+//                delegate?.push(controller)
+//            }
+//        }
+        
         if let animal = dataSource as? Animal {
-            if let controller = Controller.description.getViewController() as? DescriptionViewController {
+            if let controller = Controller.animalDescription.getViewController() as? AnimalDescriptionViewController {
                 controller.viewModel.animal = animal
-                delegate?.push(controller)
-            }
-        }else if let coverImage = dataSource as? Animal {
-            if let controller = Controller.description.getViewController() as? DescriptionViewController {
-                controller.viewModel.animal = coverImage
                 delegate?.push(controller)
             }
         }
     }
     
     func animalDetailsTapped(dataSource: AnimalDetailsCollectionViewCellDataSource?) {
+//        if let animal = dataSource as? Animal {
+//            if let controller = Controller.description.getViewController() as? DescriptionViewController {
+//                controller.viewModel.animal = animal
+//                delegate?.push(controller)
+//            }
+//        }
+        
         if let animal = dataSource as? Animal {
-            if let controller = Controller.description.getViewController() as? DescriptionViewController {
+            if let controller = Controller.animalDescription.getViewController() as? AnimalDescriptionViewController {
                 controller.viewModel.animal = animal
                 delegate?.push(controller)
             }

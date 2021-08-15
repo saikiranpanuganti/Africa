@@ -79,6 +79,9 @@
 		7F78BE7E2690240C000DD505 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE7D2690240C000DD505 /* Storyboard.swift */; };
 		7F78BE81269024AE000DD505 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE80269024AE000DD505 /* HomeTabViewController.swift */; };
 		7F78BE8C269054AC000DD505 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78BE8B269054AC000DD505 /* TabBarController.swift */; };
+		7F7C298126C817FD0072F2EB /* AnimalDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C298026C817FD0072F2EB /* AnimalDescriptionViewController.swift */; };
+		7F7C298326C818C50072F2EB /* AnimalDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C298226C818C50072F2EB /* AnimalDescriptionView.swift */; };
+		7F7C298526C818D00072F2EB /* AnimalDescriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C298426C818D00072F2EB /* AnimalDescriptionViewModel.swift */; };
 		7FAE20B026BBD00500C36751 /* VideoDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE20AE26BBD00500C36751 /* VideoDetailsCollectionViewCell.swift */; };
 		7FAE20B126BBD00500C36751 /* VideoDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE20AF26BBD00500C36751 /* VideoDetailsCollectionViewCell.xib */; };
 		7FCAD0552692EA6900A39C1B /* GridType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCAD0542692EA6900A39C1B /* GridType.swift */; };
@@ -164,6 +167,9 @@
 		7F78BE7D2690240C000DD505 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		7F78BE80269024AE000DD505 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		7F78BE8B269054AC000DD505 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		7F7C298026C817FD0072F2EB /* AnimalDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDescriptionViewController.swift; sourceTree = "<group>"; };
+		7F7C298226C818C50072F2EB /* AnimalDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDescriptionView.swift; sourceTree = "<group>"; };
+		7F7C298426C818D00072F2EB /* AnimalDescriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDescriptionViewModel.swift; sourceTree = "<group>"; };
 		7FAE20AE26BBD00500C36751 /* VideoDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		7FAE20AF26BBD00500C36751 /* VideoDetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoDetailsCollectionViewCell.xib; sourceTree = "<group>"; };
 		7FCAD0542692EA6900A39C1B /* GridType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridType.swift; sourceTree = "<group>"; };
@@ -427,6 +433,7 @@
 				7F62BF2C268EEDA700115596 /* Main.storyboard */,
 				7F62BF7D268F1EF200115596 /* Splash */,
 				7F2E0BF12697F87C00196AC0 /* Description */,
+				7F7C297F26C817B90072F2EB /* DescriptionWithScrollView */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -506,6 +513,16 @@
 				7F7759992691E75B0012BC25 /* Cells */,
 			);
 			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		7F7C297F26C817B90072F2EB /* DescriptionWithScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				7F7C298026C817FD0072F2EB /* AnimalDescriptionViewController.swift */,
+				7F7C298226C818C50072F2EB /* AnimalDescriptionView.swift */,
+				7F7C298426C818D00072F2EB /* AnimalDescriptionViewModel.swift */,
+			);
+			path = DescriptionWithScrollView;
 			sourceTree = "<group>";
 		};
 		7FAE20AD26BBCFEB00C36751 /* Cells */ = {
@@ -656,6 +673,7 @@
 				7F62BF6C268F1B2F00115596 /* Constants.swift in Sources */,
 				7F62BF66268F1B1F00115596 /* Colors.swift in Sources */,
 				7F1E8FA8269B5595002EC961 /* LearnMoreTableViewCell.swift in Sources */,
+				7F7C298526C818D00072F2EB /* AnimalDescriptionViewModel.swift in Sources */,
 				7FE8324426A1A2720097BABD /* WatchViewModel.swift in Sources */,
 				7F7759702691C3D70012BC25 /* HomeTabViewModel.swift in Sources */,
 				7F62BF7A268F1D1400115596 /* SplashViewController.swift in Sources */,
@@ -664,6 +682,7 @@
 				7F1E8FA2269B0E63002EC961 /* QuotesTableViewCell.swift in Sources */,
 				7F62BF6E268F1B2F00115596 /* Config.swift in Sources */,
 				7F62BF27268EEDA700115596 /* AppDelegate.swift in Sources */,
+				7F7C298126C817FD0072F2EB /* AnimalDescriptionViewController.swift in Sources */,
 				7F3326C5269A0DAD000A5375 /* LabelTableViewCell.swift in Sources */,
 				7FCAD0592692F72700A39C1B /* HeaderCollectionReusableView.swift in Sources */,
 				7F7759A326920DEF0012BC25 /* BannerCollectionViewCell.swift in Sources */,
@@ -682,6 +701,7 @@
 				7F2E0BF62698291A00196AC0 /* DescriptionViewModel.swift in Sources */,
 				7F62BF81268F207700115596 /* SplashView.swift in Sources */,
 				7FCAD0552692EA6900A39C1B /* GridType.swift in Sources */,
+				7F7C298326C818C50072F2EB /* AnimalDescriptionView.swift in Sources */,
 				7FE8324226A1A2690097BABD /* WatchTabView.swift in Sources */,
 				7F62BF78268F1B5A00115596 /* View+Extension.swift in Sources */,
 			);
