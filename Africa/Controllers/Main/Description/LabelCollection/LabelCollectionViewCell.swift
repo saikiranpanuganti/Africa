@@ -25,6 +25,7 @@ class LabelCollectionViewCell: UICollectionViewCell {
     
     func configureUI() {
         label.text = dataSource?.text ?? ""
+        label.textColor = Colors.shared.blackWhiteBackground
     }
 
 }

@@ -12,11 +12,19 @@ protocol AnimalDescriptionViewModelDelegate: BaseViewModelDelegate {
 }
 
 class AnimalDescriptionViewModel: BaseViewModel {
-    weak var delegate: AnimalDescriptionViewModelDelegate?
+    weak var delegate: AnimalDescriptionViewModelDelegate? {
+        didSet {
+            baseDelegate = delegate
+        }
+    }
     
     var animal: Animal?
     var wilderness: Wilderness?
     var quotes: Quotes?
+    
+    override func notificationReceived(notfication: NSNotification?) {
+        super.notificationReceived(notfication: notfication)
+    }
     
     func getData() {
         var galleryArray: [Gallery] = []

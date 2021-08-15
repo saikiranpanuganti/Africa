@@ -54,7 +54,6 @@ class AnimalDescriptionView: UIView {
         
         wildernessCollectionView.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 0)
         
-        didYouKnowCollectionView.backgroundColor = Colors.shared.quotes
         didYouKnowCollectionView.layer.cornerRadius = 10.0
         
         wildernessCollectionView.delegate = self
@@ -93,8 +92,6 @@ class AnimalDescriptionView: UIView {
         wikipediaLabel.text = Strings.shared.wikipedia
         wikiImage.image = UIImage(systemName: "arrow.up.right.square")?.withRenderingMode(.alwaysTemplate)
         wikiImage.tintColor = Colors.shared.orangeAppColor
-        
-        wikiView.backgroundColor = Colors.shared.quotes
     }
     func addNavBarView() {
         navBarView = NavBarView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: topSafeAreaHeight + 44))
@@ -105,6 +102,7 @@ class AnimalDescriptionView: UIView {
     }
     
     func updateUI() {
+        self.backgroundColor = Colors.shared.whiteBlackBackground
         navBarView.title = dataSource?.animal?.name ?? ""
         animalImage.image = UIImage(named: dataSource?.animal?.image ?? "")
         title.text = dataSource?.animal?.title.uppercased()
@@ -116,6 +114,12 @@ class AnimalDescriptionView: UIView {
         animalWikiLabel.textColor = Colors.shared.orangeAppColor
         pageControl.numberOfPages = dataSource?.quotes?.quoteArray.count ?? 0
         pageControl.currentPageIndicatorTintColor = Colors.shared.orangeAppColor
+        pageControl.pageIndicatorTintColor = Colors.shared.blackWhiteBackground
+        wikipediaLabel.textColor = Colors.shared.blackWhiteBackground
+        wikiView.backgroundColor = Colors.shared.lightWhiteDarkGrey
+        didYouKnowCollectionView.backgroundColor = Colors.shared.lightWhiteDarkGrey
+        wildernessCollectionView.reloadData()
+        didYouKnowCollectionView.reloadData()
     }
     
     @IBAction func wikiTapped(_ sender: UIButton) {

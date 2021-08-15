@@ -20,6 +20,9 @@ class AnimalDescriptionViewController: BaseViewController {
         viewModel.getData()
     }
 
+    override func recievedNotification(notification: NSNotification?) {
+        viewModel.notificationReceived(notfication: notification)
+    }
 }
 
 extension AnimalDescriptionViewController: AnimalDescriptionViewDelegate {
