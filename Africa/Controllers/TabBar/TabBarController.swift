@@ -32,7 +32,7 @@ class TabBarController: UITabBarController {
         let watchController = Controller.watchTab.getViewController()
         watchController.tabBarItem = UITabBarItem(title: Strings.shared.watch, image: UIImage(systemName: "play.rectangle"), selectedImage: UIImage(systemName: "play.rectangle"))
         
-        let mapController = Controller.homeTab.getViewController()
+        let mapController = Controller.mapsTab.getViewController()
         mapController.tabBarItem = UITabBarItem(title: Strings.shared.locations, image: UIImage(systemName: "map"), selectedImage: UIImage(systemName: "map"))
         
         let galleryController = Controller.galleryTab.getViewController()

@@ -155,6 +155,38 @@
             </objects>
             <point key="canvasLocation" x="-238" y="708"/>
         </scene>
+        <!--Maps Tab View Controller-->
+        <scene sceneID="pnQ-I1-frS">
+            <objects>
+                <viewController storyboardIdentifier="MapsTabViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3wb-ze-JSJ" customClass="MapsTabViewController" customModule="Africa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jiV-gV-oRY" customClass="MapsTabView" customModule="Africa" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HFh-si-9MY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dF3-r8-hgh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HFh-si-9MY" firstAttribute="top" secondItem="jiV-gV-oRY" secondAttribute="top" id="JPo-n7-Wey"/>
+                            <constraint firstItem="dF3-r8-hgh" firstAttribute="trailing" secondItem="HFh-si-9MY" secondAttribute="trailing" id="f08-Zt-ScW"/>
+                            <constraint firstAttribute="bottom" secondItem="HFh-si-9MY" secondAttribute="bottom" id="fiF-Yt-lY6"/>
+                            <constraint firstItem="HFh-si-9MY" firstAttribute="leading" secondItem="dF3-r8-hgh" secondAttribute="leading" id="pSg-Gf-wxd"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="mapKit" destination="HFh-si-9MY" id="VtH-fR-F5g"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="mapsTabView" destination="jiV-gV-oRY" id="1fn-Z6-9et"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h65-wb-Bi9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508" y="709"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

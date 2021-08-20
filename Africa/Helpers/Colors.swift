@@ -24,6 +24,7 @@ class Colors {
     var quotes = #colorLiteral(red: 0.1098039216, green: 0.1098039216, blue: 0.1176470588, alpha: 1) //rgba(28, 28, 30, 0)
     var videoBackground = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.9) //rgba(255, 255, 255, 0.9)
     var lightWhiteDarkGrey = #colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.9607843137, alpha: 1) //rgba(245, 245, 245, 1)
+    var orangeAppColorWithAlpha = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 0.8) //rgba(255, 175, 0, 0.8)
     
     var menuTopGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.7) //rgba(0, 0, 0, 0.7)
     var menuBottomGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.3) //rgba(0, 0, 0, 0.3)
@@ -51,6 +52,7 @@ class Colors {
             quotes = #colorLiteral(red: 0.1098039216, green: 0.1098039216, blue: 0.1176470588, alpha: 1) //rgba(28, 28, 30, 0)
             videoBackground = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.9) //rgba(0, 0, 0, 0.9)
             lightWhiteDarkGrey = #colorLiteral(red: 0.1098039216, green: 0.1098039216, blue: 0.1176470588, alpha: 1) //rgba(28, 28, 30, 0)
+            orangeAppColorWithAlpha = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 0.8) //rgba(255, 175, 0, 0.8)
             
             menuTopGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.7) //rgba(0, 0, 0, 0.7)
             menuBottomGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.3) //rgba(0, 0, 0, 0.3)
@@ -75,6 +77,7 @@ class Colors {
             quotes = #colorLiteral(red: 0.1098039216, green: 0.1098039216, blue: 0.1176470588, alpha: 1) //rgba(28, 28, 30, 0)
             videoBackground = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.9) //rgba(255, 255, 255, 0.9)
             lightWhiteDarkGrey = #colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.9607843137, alpha: 1) //rgba(245, 245, 245, 1)
+            orangeAppColorWithAlpha = #colorLiteral(red: 1, green: 0.6862745098, blue: 0, alpha: 0.8) //rgba(255, 175, 0, 0.8)
             
             menuTopGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.7) //rgba(0, 0, 0, 0.7)
             menuBottomGradientColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.3) //rgba(0, 0, 0, 0.3)
