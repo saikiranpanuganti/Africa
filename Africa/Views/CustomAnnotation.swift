@@ -25,9 +25,6 @@ class CustomPointAnnotationView: MKAnnotationView {
     
     func addBackgroundView(image: String) {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-//        view.layer.borderWidth = 2.0
-//        view.layer.borderColor = Colors.shared.clear.cgColor
-//        view.layer.cornerRadius = view.frame.width/2
         self.addSubview(view)
         
         
@@ -47,11 +44,11 @@ class CustomPointAnnotationView: MKAnnotationView {
     }
     
     func animateBorder() {
-        Timer.scheduledTimer(withTimeInterval: 2.2, repeats: true) { timer in
+        Timer.scheduledTimer(withTimeInterval: 1.7, repeats: true) { timer in
             self.animationView.transform = CGAffineTransform(scaleX: 1, y: 1)
             self.animationView.layer.borderColor = Colors.shared.orangeAppColorWithAlpha.cgColor
-            self.animateBorderColor(view: self.animationView, toColor: Colors.shared.clear, duration: 2.0)
-            self.animateViewFrame(view: self.animationView, duration: 2.0)
+            self.animateBorderColor(view: self.animationView, toColor: Colors.shared.clear, duration: 1.5)
+            self.animateViewFrame(view: self.animationView, duration: 1.5)
         }
     }
     
@@ -71,32 +68,3 @@ class CustomPointAnnotationView: MKAnnotationView {
     }
 }
 
-
-//class CustomPointAnnotation: MKAnnotationView {
-//
-//    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
-//        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
-//
-//        frame = CGRect(x: 0, y: 0, width: 40, height: 50)
-//        centerOffset = CGPoint(x: 0, y: -frame.size.height / 2)
-//
-//        canShowCallout = true
-//        setupUI()
-//    }
-//
-//    @available(*, unavailable)
-//    required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-//
-//    // MARK: Setup
-//
-//    private func setupUI() {
-//        backgroundColor = .lightText
-//
-////        let view = MapPinView()
-////        addSubview(view)
-////
-////        view.frame = bounds
-//    }
-//}

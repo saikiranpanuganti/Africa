@@ -51,17 +51,12 @@ extension MapsTabView: MKMapViewDelegate {
         if annotationView == nil {
             if let first = annotation.title, let image = first?.components(separatedBy: " ").first {
                 annotationView = CustomPointAnnotationView(annotation: annotation, reuseIdentifier: reuseIdentifier, image: "map-" + image.lowercased())
-                print("map-" + image)
             }
             
             annotationView?.canShowCallout = true
         } else {
             annotationView?.annotation = annotation
         }
-
-//        annotationView?.image = UIImage(named: "logoRounded")
-//        annotationView?.layer.borderWidth = 2.0
-//        annotationView?.layer.borderColor = UIColor.red.cgColor
 
         return annotationView
     }
